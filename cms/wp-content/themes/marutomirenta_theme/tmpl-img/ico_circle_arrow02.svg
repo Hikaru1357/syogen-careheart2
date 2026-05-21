@@ -1,0 +1,11 @@
+<svg id="ico_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_278" data-name="長方形 278" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_1123" data-name="グループ 1123" clip-path="url(#clip-path)">
+    <path id="パス_5961" data-name="パス 5961" d="M16,8A8,8,0,1,1,8,0a8,8,0,0,1,8,8" fill="#78aa00"/>
+    <path id="パス_5962" data-name="パス 5962" d="M8,10.745l2.4-4.157H5.6Z" fill="#fff"/>
+  </g>
+</svg>

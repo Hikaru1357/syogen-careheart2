@@ -1,0 +1,3110 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>document.documentElement.classList.add('js-motion');</script>
+
+<script data-cfasync="false">
+  if (navigator.userAgent.match(/(iPhone|Android.*Mobile)/)) {
+    document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,user-scalable=1">');
+  } else {
+    document.write('<meta name="viewport" content="width=1200,maximum-scale=2.0,user-scalable=1">');
+  };
+</script>
+<meta name="viewport" content="width=1200,maximum-scale=2.0,user-scalable=1">
+<meta name="format-detection" content="telephone=no">
+<title>松原企業株式会社｜らく段・ストレッチャーC・福祉介護用品販売・福祉車両レンタル</title>
+<meta name="description" content="可搬型階段昇降機「らく段」シリーズ、搬送用昇降ストレッチャーC、福祉介護用品の販売・レンタルを行う松原企業株式会社の公式サイト。階段介護の負担軽減に強い味方。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="松原企業株式会社｜らく段・ストレッチャーC・福祉介護用品販売・福祉車両レンタル">
+<meta property="og:site_name" content="松原企業株式会社">
+
+<!-- Sagisaka theme CSS（流用） -->
+<link rel="stylesheet" href="./assets/reset.css">
+<link rel="stylesheet" href="./assets/common.css_date=20251222023408.css">
+<link rel="stylesheet" href="./assets/main.css_date=20260430091435.css">
+<link rel="stylesheet" href="./assets/mce.css_date=20251121054254.css">
+<link rel="stylesheet" href="./assets/slick.css_date=20251121054253.css">
+<!-- ゲルコム由来 Slick (PICK UP センターモード用) -->
+<link rel="stylesheet" href="cms/wp-content/themes/marutomirenta_theme/tmpl-img/slick.css">
+<link rel="stylesheet" href="./assets/swiper-bundle.min.css_date=20251121054254.css">
+<link rel="stylesheet" href="./assets/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+<link rel="shortcut icon" href="cms/wp-content/themes/marutomirenta_theme/tmpl-img/favicon.ico">
+<link rel="apple-touch-icon" href="cms/wp-content/themes/marutomirenta_theme/tmpl-img/ico_webclip.png">
+
+<style>
+/* ---- minimal overrides for welfare branding ---- */
+.brand-title-jp {
+  font-family: 'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;
+  font-weight:700;
+  font-size:20px;
+  letter-spacing:.06em;
+  color:#2a2a2a;
+  display:flex; flex-direction:column; line-height:1.3;
+}
+.brand-title-jp small{ font-size:11px; font-weight:500; color:#4D8E41; letter-spacing:.18em; }
+
+/* ===== ヘッダー
+   Sagisaka main.css の：
+     body { padding-top: 100px; }  ← 固定ヘッダー用の余白（不要）
+     .header { position:fixed; height:100px; }  ← 高さハードコード
+     .header--logo { width:15.15625vw; max-width:291px; margin-top:10px; }  ← vw幅
+   これらが私の min-height/heightを潰すので height:auto と !important で完全打ち消し
+   ===== */
+body.home { padding-top: 0 !important; }
+body.home main { margin-top: 0 !important; }
+/* 横スクロール防止 — .scroll-strip の -5vw マージンや絶対配置要素が body 幅を超えるのを抑止 */
+html, body { overflow-x: hidden !important; max-width: 100% !important; }
+/* アンカーリンクのスムーズスクロール */
+html { scroll-behavior: smooth; }
+.header {
+  position: relative !important;   /* fixed→relativeに変更（ページ先頭に流す） */
+  height: auto !important;
+  min-height: 140px !important;
+  padding: 16px 0 !important;
+  border-top: 4px solid #4D8E41;
+  background: #fff;
+  display: flex; align-items: center;
+}
+.header .inner {
+  width: 100% !important; max-width: 100% !important;
+  height: auto !important; min-height: 0 !important;
+  padding: 0 32px !important;
+  display: flex !important; align-items: center !important; justify-content: space-between !important;
+}
+.header .header--logo {
+  width: auto !important; max-width: none !important;
+  margin: 0 !important; line-height: 0 !important;
+  flex: 0 0 auto !important;
+}
+.header .header--logo a { display:inline-block !important; line-height:0 !important; }
+.header .header--logo img {
+  display:block !important;
+  height:96px !important;
+  width:auto !important;
+  max-width:none !important;
+}
+/* メニュー区切りを「まっすぐ」な縦線に — Sagisakaの斜め(20deg)を打ち消し */
+.header .gnav--list li::before {
+  transform: none !important;
+  width: 1px !important;
+  height: 1.2em !important;
+  background: #d0d0d0 !important;
+  opacity: 1 !important;
+}
+.header .gnav--list li:first-child::before { display:none !important; }
+/* ホバー下線の位置ずれ修正 — Sagisakaの left:-1vw / skew(-20deg) / bottom:18px / width:100% を打ち消し */
+.header .gnav--list a { position: relative !important; padding: 8px 1.2vw !important; }
+.header .gnav--list a::after {
+  left: 1.2vw !important;
+  right: 1.2vw !important;
+  bottom: -4px !important;
+  width: 0 !important;
+  transform: none !important;
+  background: #4D8E41 !important;
+}
+.header .gnav--list a:hover::after,
+.header .gnav--list .current a::after {
+  width: calc(100% - 2.4vw) !important;
+}
+
+/* ===== ヘッダー右側のレイアウト（TEL/FAX上段、ナビ下段） ===== */
+.header--menu {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+}
+
+/* ===== TEL/FAX（オリジナル③のCSSを踏襲・緑基調に） ===== */
+.p-sub-menu {
+  display: flex; align-items: center; gap: 16px;
+  margin: 0; flex-direction: row-reverse;
+}
+.p-sub-menu__fax {
+  position: relative;
+  display: flex; align-items: baseline;
+  color: #4D8E41 !important;
+  font-family: 'Zen Maru Gothic','Noto Sans JP',sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+.p-sub-menu__fax span {
+  display: inline-block; margin-right: 4px;
+  font-size: 17px; color: #4D8E41;
+}
+.p-sub-menu__tel {
+  display: flex; align-items: center;
+  line-height: 1; margin: 0;
+}
+.p-sub-menu__tel a {
+  display: flex; align-items: center;
+  position: relative; padding-left: 32px;
+  color: #4D8E41 !important;
+  font-family: 'Zen Maru Gothic','Noto Sans JP',sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1;
+  text-decoration: none;
+}
+.p-sub-menu__tel a::before {
+  content: ''; position: absolute;
+  top: 50%; left: 0; transform: translateY(-50%);
+  width: 26px; height: 26px;
+  background: url('cms/wp-content/themes/marutomirenta_theme/tmpl-img/ico_tel02.png') no-repeat left center / 26px;
+  /* オリジナルは黄緑のアイコン。緑色フィルターをかけて #4D8E41 寄りに */
+  filter: hue-rotate(15deg) saturate(.85) brightness(.85);
+}
+.p-sub-menu__tel > span {
+  display: inline-block; margin-left: 12px;
+  padding: 6px 10px;
+  background-color: #f4f9f2; border-radius: 999px;
+  color: #444; font-size: 11.5px; font-weight: 500;
+}
+@media (max-width:1080px){
+  .p-sub-menu { display: none; }
+}
+@media (max-width:1080px){
+  .header { min-height: 88px !important; padding: 12px 0 !important; }
+  .header .inner { padding: 0 16px !important; }
+  .header .header--logo img { height: 56px !important; }
+}
+
+/* ===== rs-sns（NEWS+Instagram+Facebook 3カラム）— オリジナルCSSを緑基調で再着色 ===== */
+:root {
+  --rs-primary: #4D8E41;
+  --rs-primary-dark: #3b7232;
+  --rs-primary-light: #DBE8D8;
+  --rs-bg-soft: #f4f9f2;
+  --rs-text: #2a2a2a;
+  --rs-text-sub: #666;
+  --rs-line: #e0e0e0;
+  --rs-font-en: 'Cinzel','Cormorant Garamond','Josefin Sans',serif;
+}
+.rs-section { padding: 80px 0; }
+.rs-section.-bg { background: var(--rs-bg-soft); }
+.rs-section__inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.rs-section__head { margin-bottom: 48px; position: relative; }
+.rs-section__ttl {
+  font-weight: 700; color: var(--rs-text);
+  font-size: 30px; letter-spacing: .04em; line-height: 1.3;
+  position: relative; display: inline-block; z-index: 1;
+  font-family: 'Zen Maru Gothic','Noto Sans JP',sans-serif;
+}
+.rs-section__ttl[data-bg-en]::before {
+  content: attr(data-bg-en);
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-58%);
+  font-family: var(--rs-font-en);
+  font-size: clamp(5rem, 12vw, 10rem);
+  font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; white-space: nowrap;
+  background: linear-gradient(180deg, rgba(77,142,65,.14) 0%, rgba(77,142,65,.02) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+  pointer-events: none; user-select: none; z-index: -1;
+}
+.rs-section__ttl .en {
+  display: block; font-family: var(--rs-font-en);
+  font-size: 18px; color: var(--rs-primary);
+  letter-spacing: .18em; line-height: 1;
+  margin-bottom: 12px; font-weight: 600; text-transform: uppercase;
+}
+.rs-section__lead {
+  margin-top: 16px; color: var(--rs-text-sub);
+  font-size: 15px; line-height: 1.9;
+}
+
+/* ===== SNS grid ===== */
+.rs-sns__grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;
+  align-items: start;
+}
+@media (max-width: 1199px) { .rs-sns__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 767px)  { .rs-sns__grid { grid-template-columns: 1fr; } }
+.rs-sns__col {
+  background: #fff; border-radius: 20px; overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
+  display: flex; flex-direction: column;
+}
+.rs-sns__head {
+  padding: 18px 22px;
+  display: flex; align-items: center; gap: 14px;
+  color: #fff; cursor: default;
+}
+.rs-sns__head.-ig {
+  background: linear-gradient(135deg,#feda75 0%,#fa7e1e 24%,#d62976 52%,#962fbf 76%,#4f5bd5 100%);
+}
+.rs-sns__head.-fb { background: #1877f2; }
+.rs-sns__head.-news { background: var(--rs-primary); }
+.rs-sns__ic {
+  width: 42px; height: 42px; flex: none;
+  background: rgba(255,255,255,.18);
+  border: 1.5px solid rgba(255,255,255,.5);
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; overflow: hidden;
+}
+.rs-sns__info {
+  flex: 1; min-width: 0;
+  display: flex; flex-direction: column; gap: 2px; line-height: 1.25;
+}
+.rs-sns__label {
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 14px; font-weight: 700; letter-spacing: .1em;
+}
+.rs-sns__handle {
+  font-size: 13px; opacity: .95;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.rs-sns__cta {
+  font-size: 12px; padding: 6px 14px; border-radius: 999px;
+  background: rgba(255,255,255,.2);
+  border: 1.5px solid rgba(255,255,255,.5);
+  font-weight: 700; flex: none; white-space: nowrap;
+  letter-spacing: .04em;
+}
+
+/* Instagram feed */
+.rs-sns__feed.-ig {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px;
+}
+.rs-sns__post.-ig {
+  aspect-ratio: 1/1; overflow: hidden;
+  position: relative; display: block; background: #f5f5f5;
+  cursor: default;
+}
+.rs-sns__post.-ig img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+
+/* News feed */
+.rs-sns__feed.-news {
+  list-style: none; padding: 0; margin: 0; flex: 1;
+}
+.rs-sns__post.-news {
+  border-bottom: 1px solid var(--rs-line); padding: 0;
+}
+.rs-sns__post.-news:last-child { border-bottom: none; }
+.rs-sns__post.-news a {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 16px 22px;
+  text-decoration: none; color: inherit;
+  transition: background .25s;
+}
+.rs-sns__post.-news a:hover { background: var(--rs-primary-light); }
+.rs-sns__post.-news .rs-sns__post-date {
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 12px; color: var(--rs-primary);
+  font-weight: 700; margin: 0; letter-spacing: .05em;
+}
+.rs-sns__post.-news .rs-sns__post-cat {
+  display: inline-block; align-self: flex-start;
+  background: var(--rs-primary-light);
+  color: var(--rs-primary-dark);
+  font-size: 11px; padding: 2px 10px; border-radius: 999px;
+  margin: 0; font-weight: 700; letter-spacing: .04em;
+}
+.rs-sns__post.-news a:hover .rs-sns__post-cat { background: #fff; }
+.rs-sns__post.-news .rs-sns__post-text {
+  font-size: 13.5px; line-height: 1.6;
+  margin: 2px 0 0; color: var(--rs-text);
+}
+
+/* Facebook feed */
+.rs-sns__feed.-fb {
+  list-style: none; padding: 0; margin: 0; flex: 1;
+}
+.rs-sns__post.-fb {
+  display: flex; gap: 14px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--rs-line);
+}
+.rs-sns__post.-fb:last-child { border-bottom: none; }
+.rs-sns__post-img {
+  width: 92px; height: 92px; flex: none;
+  border-radius: 12px; overflow: hidden;
+  background: #f5f5f5;
+}
+.rs-sns__post-img img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.rs-sns__post-body { flex: 1; min-width: 0; }
+.rs-sns__post-date {
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 12px; color: var(--rs-text-sub);
+  margin: 0 0 4px; letter-spacing: .05em;
+}
+.rs-sns__post-text {
+  font-size: 13.5px; line-height: 1.65;
+  margin: 0 0 8px; color: var(--rs-text);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rs-sns__post-meta {
+  display: flex; gap: 14px;
+  font-size: 11.5px; color: var(--rs-text-sub);
+}
+
+/* "もっと見る" */
+.rs-sns__more {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 14px;
+  background: var(--rs-bg-soft);
+  color: var(--rs-primary);
+  font-weight: 700; font-size: 14px; letter-spacing: .04em;
+  border-top: 1px solid var(--rs-line);
+  cursor: default; text-decoration: none;
+}
+.rs-sns__more.-clickable { cursor: pointer; transition: all .25s; }
+.rs-sns__more.-clickable:hover { background: var(--rs-primary); color: #fff; }
+.rs-sns__more.-clickable:hover .rs-sns__more-arrow { transform: translateX(4px); }
+.rs-sns__more-arrow { font-family: 'Josefin Sans',sans-serif; transition: transform .25s; }
+
+@media (max-width: 575px) {
+  .rs-sns__head { padding: 14px 16px; gap: 10px; }
+  .rs-sns__cta { font-size: 11px; padding: 5px 10px; }
+  .rs-sns__post.-fb { padding: 14px 16px; gap: 12px; }
+  .rs-sns__post-img { width: 80px; height: 80px; }
+}
+
+/* ===== NEWS（オリジナル準拠の縦並びデザイン・緑基調に再着色） ===== */
+.p-home-news {
+  padding: 80px 5vw 88px;
+  background: #fff;
+}
+.p-home-news__container {
+  max-width: 960px; margin: 0 auto;
+  display: flex; flex-direction: column;
+}
+.p-home-news__header {
+  display: flex; flex-direction: column; align-items: center; position: relative;
+}
+.p-home-news__heading.p-section__heading {
+  display: flex; flex-direction: column; align-items: center;
+  padding-top: 64px; margin-bottom: 28px;
+  font-family: 'Zen Maru Gothic','Noto Sans JP',sans-serif;
+  font-weight: 700; line-height: 1.44; text-align: center;
+  /* お知らせアイコン的なグリーン円形バッジ */
+  background:
+    radial-gradient(circle at 50% 24px, #4D8E41 0, #4D8E41 22px, transparent 23px),
+    radial-gradient(circle at 50% 24px, #fff 0, #fff 16px, transparent 17px);
+  background-repeat: no-repeat;
+}
+.p-home-news__heading.p-section__heading::before {
+  content: "i";
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 44px; height: 44px; border-radius: 50%; background: #4D8E41;
+  color: #fff; font-family: 'Josefin Sans',serif; font-style: italic;
+  font-size: 24px; font-weight: 700; line-height: 44px; text-align: center;
+  /* 上記の radial-gradient と上書き */
+  z-index: 1;
+}
+.p-home-news__heading.p-section__heading { background: none; }
+.p-home-news__heading .ja {
+  position: relative; padding-bottom: 12px;
+  font-size: 32px; color: #2a2a2a; letter-spacing: .06em;
+}
+.p-home-news__heading .ja::after {
+  content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 80px; height: 3px; background: #4D8E41;
+}
+.p-home-news__heading .en {
+  margin-top: 8px;
+  font-family: 'Josefin Sans',sans-serif; font-size: 14px;
+  color: #4D8E41; letter-spacing: .2em; font-weight: 600;
+}
+
+/* PC: もっと見るボタンを見出し直下に */
+.p-section__more { margin: 24px 0 0; }
+.p-section__more-sp { display: none; }
+@media (max-width:767px){
+  .p-section__more { display: none; }
+  .p-section__more-sp { display: flex; justify-content: center; margin-top: 24px; }
+  .p-home-news__heading .ja { font-size: 26px; }
+}
+.c-btn-primary {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 28px; background: #fff; border: 2px solid #4D8E41;
+  color: #4D8E41 !important; font-weight: 600; font-size: 13px;
+  border-radius: 999px; text-decoration: none; transition: all .25s ease;
+  position: relative;
+}
+.c-btn-primary::after {
+  content: "→"; margin-left: 10px; font-family: 'Josefin Sans',sans-serif;
+}
+.c-btn-primary:hover { background: #4D8E41; color: #fff !important; }
+
+/* === ニュース一覧 === */
+.p-home-news__body { margin-top: 32px; }
+.p-news-list {
+  position: relative; width: 100%; list-style: none; padding: 0; margin: 0;
+  border-top: 2px dotted #d0d8cc;
+}
+.p-news-list__item {
+  border-bottom: 2px dotted #d0d8cc;
+}
+.p-news-list__item a {
+  position: relative;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px;
+  padding: 24px 36px 24px 8px;
+  text-decoration: none; color: inherit;
+  transition: all .25s ease;
+}
+.p-news-list__item a:hover { background: #f5f8f4; }
+.p-news-list__item a::after {
+  content: ""; position: absolute; right: 12px; top: 50%;
+  width: 10px; height: 10px; margin-top: -7px;
+  border-top: 2px solid #4D8E41; border-right: 2px solid #4D8E41;
+  transform: rotate(45deg); transition: right .25s ease;
+}
+.p-news-list__item a:hover::after { right: 6px; }
+.p-news-list__item-date {
+  font-family: 'Josefin Sans','Zen Maru Gothic',sans-serif;
+  font-size: 15px; font-weight: 700; color: #444;
+  min-width: 100px; margin: 0;
+}
+.p-news-list__item-category {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 600; color: #fff; background: #4D8E41;
+  border-radius: 4px; padding: 4px 10px; min-width: 80px; height: 26px;
+  margin: 0; letter-spacing: .04em;
+}
+.p-news-list__item-text {
+  flex: 1; min-width: 200px; font-size: 15px; font-weight: 500;
+  line-height: 1.6; color: #2a2a2a; margin: 0;
+  transition: color .25s ease;
+}
+.p-news-list__item a:hover .p-news-list__item-text { color: #4D8E41; }
+@media (max-width:767px){
+  .p-news-list__item a { padding: 16px 28px 16px 8px; gap: 8px 12px; }
+  .p-news-list__item-text { width: 100%; margin-top: 6px; flex: 1 1 100%; }
+  .p-news-list__item-date { min-width: 80px; font-size: 13.5px; }
+  .p-news-list__item-category { font-size: 11px; min-width: 64px; height: 22px; }
+}
+
+/* ===== フッター（オリジナル準拠） ===== */
+body .footer, body footer.footer {
+  background:#1d2a1a !important;
+  color:#cdd5cb !important;
+  padding:64px 5vw 0 !important;
+  width: 100% !important;
+  display: block !important;
+}
+.footer a { color:#cdd5cb; }
+.footer a:hover { color:#fff; }
+.footer-inner { display:flex !important; flex-wrap:wrap; gap:48px; align-items:flex-start; }
+.footer--main { flex:1 1 320px; }
+.footer--right { flex:1 1 480px; }
+.footer--logo img { max-width:260px; height:auto; display:block; }
+.footer--name-text {
+  font-size:18px; font-weight:700; color:#fff;
+  margin:0 0 16px; letter-spacing:.06em;
+}
+.footer--office {
+  font-style:normal; font-size:13px; line-height:1.85; color:#aab1a8;
+}
+.footer--nav ul { list-style:none; padding:0; margin:0 0 12px; gap:12px 32px; flex-wrap:wrap; display:flex; }
+.footer--nav li a { font-size:14px; padding:4px 0; }
+.footer--copyright { color:#888; font-size:12px; margin-top:24px; }
+.footer--illust {
+  display:flex; justify-content:center; align-items:flex-end; gap:24px;
+  margin-top:48px; padding:24px 5vw 16px;
+  border-top:1px solid #2d3a2a;
+}
+.footer--illust img { max-height:80px; width:auto; }
+@media (max-width:768px){
+  .footer--illust { gap:12px; }
+  .footer--illust img { max-height:54px; }
+}
+.notice_block {
+  background:#fffaf2; border-left:6px solid #d04848;
+  padding:28px 32px; margin:24px auto 48px;
+  border-radius:0 8px 8px 0;
+}
+.notice_block dt {
+  font-size:18px; font-weight:700; color:#d04848; margin-bottom:10px;
+  letter-spacing:.06em; display:flex; align-items:center; gap:12px;
+}
+.notice_block dt::before{
+  content:'!'; display:inline-flex; width:26px; height:26px; background:#d04848; color:#fff;
+  border-radius:50%; align-items:center; justify-content:center; font-weight:700;
+}
+.notice_block dt span{ font-size:13px; color:#6b6b6b; font-weight:500; }
+.notice_block ul li, .notice_block p { font-size:13.5px; line-height:1.85; color:#3a3a3a; margin-bottom:6px; }
+.notice_block .sign{ text-align:right; font-weight:700; color:#4D8E41; }
+.notice_block a{ color:#4D8E41; text-decoration:underline; }
+
+/* product-card price block — fits inside .pickup_item--ttl/--txt area */
+.pickup_item--price{ font-size:12px; color:#4D8E41; font-weight:700; margin-top:6px; letter-spacing:.04em; }
+.pickup_item--price .tax{ color:#888; font-weight:500; margin-left:4px; font-size:10px; }
+
+/* offices grid (replaces eggs section content) */
+.offices-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.office-card{ background:#fff; border-radius:12px; padding:28px; border:1px solid #e6e6e6; }
+.office-card h3{ font-family:'Josefin Sans',sans-serif; font-size:22px; color:#4D8E41; margin-bottom:8px; letter-spacing:.06em; }
+.office-card .ja{ font-size:14px; font-weight:700; margin-bottom:14px; }
+.office-card address{ font-style:normal; font-size:13px; line-height:1.85; color:#444; }
+@media (max-width:767px){ .offices-grid{ grid-template-columns:1fr; } }
+
+/* category icon fallback color */
+.category_item img{ background:#DBE8D8; padding:30px; border-radius:50%; }
+
+/* hero gallery image cropping */
+.hero_gallery--item{ aspect-ratio:240/310; overflow:hidden; border-radius:6px; }
+.hero_gallery--item img{ width:100%; height:100%; object-fit:cover; }
+
+/* search box placeholder removal (this is non-functional decoration only) */
+.search_box-cls a{ pointer-events:none; }
+
+/* ===== Motion ===== */
+@keyframes ssk-fade-up {
+  from { opacity:0; transform:translateY(28px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes ssk-fade-in {
+  from { opacity:0; }
+  to   { opacity:1; }
+}
+@keyframes ssk-clip-reveal {
+  from { clip-path:inset(0 100% 0 0); }
+  to   { clip-path:inset(0 0 0 0); }
+}
+@keyframes ssk-letter-up {
+  from { opacity:0; transform:translateY(60%); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes ssk-scroll-up { from { transform:translateY(0); } to { transform:translateY(-50%); } }
+@keyframes ssk-scroll-down { from { transform:translateY(-50%); } to { transform:translateY(0); } }
+@keyframes ssk-pulse { 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.08); } }
+@keyframes ssk-spin { from{ transform:rotate(0); } to{ transform:rotate(360deg); } }
+@keyframes ssk-arrow { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(6px); } }
+
+/* 常に可視。動きは transform のみ（はみ出し回避のため初期 translateY も廃止） */
+.r-up { opacity:1; }
+.js-motion .r-up.is-in { animation:ssk-fade-up .8s ease both; }
+.js-motion .r-up.d1 { animation-delay:.12s; }
+.js-motion .r-up.d2 { animation-delay:.24s; }
+.js-motion .r-up.d3 { animation-delay:.36s; }
+.js-motion .r-up.d4 { animation-delay:.48s; }
+
+/* hover lift for cards */
+.pickup_item--link, .home_post, .company_link a, .category_item a, .office-card { transition:transform .35s ease, box-shadow .35s ease; }
+.pickup_item--link:hover, .company_link a:hover, .category_item a:hover, .office-card:hover {
+  transform:translateY(-6px);
+}
+.home_post:hover { transform:translateY(-6px); }
+.pickup_item--img img, .home_post--img img, .category_item img, .company_link img { transition:transform .8s cubic-bezier(.2,.7,.2,1); }
+.pickup_item--link:hover .pickup_item--img img,
+.home_post:hover .home_post--img img,
+.company_link a:hover img { transform:scale(1.08); }
+.category_item a:hover img { transform:scale(1.05) rotate(-2deg); }
+
+/* section title underline draw */
+.section_ttl { position:relative; }
+.section_ttl .font-en { position:relative; display:inline-block; padding-bottom:8px; }
+.section_ttl .font-en::after {
+  content:""; position:absolute; left:0; bottom:0; height:3px; width:0;
+  background:#4D8E41; transition:width 1s cubic-bezier(.2,.7,.2,1);
+}
+.bg-grn .section_ttl .font-en::after { background:#fff; }
+.section_ttl.is-in .font-en::after { width:100%; }
+
+/* sliding image strip (offices background visual) */
+.scroll-strip {
+  overflow:hidden; position:relative; margin:0 -5vw;
+  -webkit-mask-image:linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+          mask-image:linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+.scroll-strip__track {
+  display:flex; gap:16px; width:max-content;
+  animation:ssk-strip 40s linear infinite;
+}
+.scroll-strip__track.reverse { animation-direction:reverse; }
+.scroll-strip img {
+  width:280px; height:200px; object-fit:cover; border-radius:8px;
+  flex-shrink:0;
+}
+@keyframes ssk-strip {
+  from { transform:translateX(0); }
+  to   { transform:translateX(-50%); }
+}
+
+/* news item hover */
+.posts-home_news .post { position:relative; transition:background .25s ease, padding .25s ease; }
+.posts-home_news .post:hover { background:#f5f8f4; padding-left:16px; }
+.posts-home_news .post::after {
+  content:"→"; position:absolute; right:8px; top:50%; transform:translate(20px,-50%);
+  font-family:'Josefin Sans',sans-serif; color:#4D8E41; opacity:0; transition:all .3s ease;
+}
+.posts-home_news .post:hover::after { transform:translate(0,-50%); opacity:1; }
+
+/* brand series hover */
+.home_bland .bland_box li a { display:inline-block; transition:transform .3s ease; position:relative; }
+.home_bland .bland_box li a::after {
+  content:""; position:absolute; left:50%; bottom:-6px; width:0; height:2px; background:#4D8E41; transition:all .3s ease; transform:translateX(-50%);
+}
+.home_bland .bland_box li a:hover { transform:translateY(-4px); }
+.home_bland .bland_box li a:hover::after { width:80%; }
+
+/* sticky-shrink header */
+.header { transition:padding .3s ease, box-shadow .3s ease, background .3s ease; }
+.header.is-shrink { padding-top:0; padding-bottom:0; box-shadow:0 6px 16px rgba(0,0,0,.08); background:rgba(255,255,255,.96); backdrop-filter:saturate(140%) blur(8px); }
+.header.is-shrink .header--logo img { transform:scale(.86); }
+.header--logo img { transition:transform .3s ease; }
+
+/* floating side CTA */
+.side-cta {
+  position:fixed; right:0; top:50%; transform:translateY(-50%);
+  display:flex; flex-direction:column; gap:8px; z-index:80;
+}
+.side-cta a {
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:56px; padding:18px 0; background:#4D8E41; color:#fff; font-size:13px; letter-spacing:.1em;
+  writing-mode:vertical-rl; text-orientation:upright; border-radius:8px 0 0 8px;
+  box-shadow:-4px 4px 12px rgba(0,0,0,.12);
+  transition:width .3s ease, background .3s ease, padding .3s ease;
+  position:relative; font-weight:700;
+  font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;
+}
+.side-cta a:hover { width:68px; background:#3b7232; }
+.side-cta a.tel { background:#d04848; }
+.side-cta a.tel:hover { background:#a73838; }
+.side-cta a::before {
+  content:""; display:block; width:18px; height:18px;
+  background-repeat:no-repeat; background-position:center; background-size:contain;
+  margin-bottom:8px; writing-mode:horizontal-tb;
+}
+.side-cta .tel::before { background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'><path d='M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z'/></svg>"); }
+.side-cta .mail::before { background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'><path d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/></svg>"); }
+.side-cta .cat::before {
+  background-image:url("cms/wp-content/themes/marutomirenta_theme/tmpl-img/icon-pdf.png");
+  width:24px; height:24px;
+  background-color:#fff; border-radius:4px;
+  background-size:80%;
+}
+@media (max-width:980px){ .side-cta { display:none; } }
+
+/* page top */
+.page-top {
+  position:fixed; right:18px; bottom:18px; width:50px; height:50px;
+  background:#4D8E41; color:#fff; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 6px 16px rgba(0,0,0,.18); z-index:80;
+  opacity:0; visibility:hidden; transition:all .3s ease;
+  cursor:pointer;
+}
+.page-top.show { opacity:1; visibility:visible; }
+.page-top:hover { background:#3b7232; transform:translateY(-3px); }
+.page-top svg { width:18px; height:18px; animation:ssk-arrow 1.6s ease-in-out infinite; }
+
+/* ============================================================
+   CTA ブロック（注文書 + お問い合わせ）— ③ より流用、緑基調
+   T-ESTATE 風のスクロール暗転背景
+   ============================================================ */
+.p-cta-block.common_cta{
+  position:relative;
+  background-image:url('cms/wp-content/uploads/cta_bg_260521.png');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;     /* パララックス：スクロールしても背景が固定 */
+  background-color:#f4f9f2;
+  margin:0 !important;
+  padding:0 !important;
+  isolation:isolate;
+  overflow:hidden;
+}
+/* iOS Safari で fixed が効かない場合のフォールバック */
+@supports (-webkit-touch-callout: none) {
+  .p-cta-block.common_cta { background-attachment:scroll; }
+}
+
+/* 上端の白フェード（前のセクションと自然につなぐ） */
+.common_cta--bg{
+  position:absolute;
+  top:0; left:0; right:0;
+  height:200px;
+  background:linear-gradient(0deg, rgba(244,249,242,0) 0%, rgba(244,249,242,.55) 60%, #f4f9f2 100%);
+  pointer-events:none;
+  z-index:3;
+}
+
+/* 暗転オーバーレイ — 常時表示（背景全体を暗くする） */
+.common_cta__overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  pointer-events:none;
+  z-index:1;
+}
+
+/* 中身のコンテナ — オーバーレイの上にカードとして乗る */
+.common_cta--inner.container{
+  position:relative;
+  z-index:2;
+  max-width:1200px; margin:0 auto;
+  padding:140px 24px 140px;
+}
+
+.rs-cta{
+  max-width:1180px; margin:0 auto;
+  display:flex; flex-direction:column; gap:24px;
+  position:relative; z-index:1;
+}
+
+/* 上段カード: 注文情報 */
+.rs-cta__order{
+  background:linear-gradient(180deg, #f4f9f2 0%, #DBE8D8 100%);   /* 青→緑 */
+  border-radius:24px;
+  box-shadow:0 14px 40px rgba(0,0,0,.15);
+  overflow:hidden;
+  position:relative;
+}
+.rs-cta__order-main{
+  padding:48px 56px;
+  display:flex; flex-direction:column; gap:22px;
+}
+.rs-cta__order-head{
+  display:flex; align-items:center; gap:18px;
+}
+.rs-cta__order-badge{
+  flex:none;
+  width:56px; height:56px; border-radius:50%;
+  background:#4D8E41;
+  color:#fff;
+  display:inline-flex; align-items:center; justify-content:center;
+  box-shadow:0 6px 16px rgba(77,142,65,.35);
+}
+.rs-cta__order-badge svg{ width:28px; height:28px; }
+.rs-cta__order-title{
+  font-size:30px; font-weight:700; line-height:1.4;
+  margin:0;
+  color:#3b7232;     /* primary-dark green */
+  letter-spacing:.02em;
+}
+.rs-cta__order-desc{
+  font-size:17px; line-height:1.85;
+  margin:0; color:#2a2a2a;
+}
+
+/* ピル型ダウンロードボタン */
+.rs-cta__pills{
+  list-style:none; padding:0; margin:8px 0 0;
+  display:flex; flex-direction:column; gap:12px;
+}
+.rs-cta__pills a{
+  display:flex; align-items:center; gap:14px;
+  background:#fff;
+  border:1.5px solid #DBE8D8;
+  border-radius:999px;
+  padding:14px 22px 14px 14px;
+  text-decoration:none;
+  color:#3b7232;
+  font-size:15.5px; font-weight:700;
+  transition:all .25s;
+  box-shadow:0 4px 12px rgba(77,142,65,.06);
+}
+.rs-cta__pills a:hover{
+  transform:translateX(4px);
+  box-shadow:0 8px 20px rgba(77,142,65,.16);
+  border-color:#4D8E41;
+}
+.rs-cta__pill-icon{
+  flex:none;
+  width:38px; height:38px; border-radius:50%;
+  background:#4D8E41; color:#fff;
+  display:inline-flex; align-items:center; justify-content:center;
+}
+.rs-cta__pill-icon svg{ width:18px; height:18px; }
+.rs-cta__pill-icon.-pdf{ background:transparent; }
+.rs-cta__pill-icon.-pdf img{ width:100%; height:100%; object-fit:contain; }
+.rs-cta__pill-label{ flex:1; line-height:1.3; }
+.rs-cta__pill-arrow{
+  font-family:"Josefin Sans",sans-serif;
+  font-size:24px; color:#4D8E41;
+  font-weight:600;
+  transition:transform .25s;
+}
+.rs-cta__pills a:hover .rs-cta__pill-arrow{ transform:translateX(3px); }
+
+/* FAX/メール情報 (濃い緑ボックス) */
+.rs-cta__info{
+  margin-top:8px;
+  background:#4D8E41;
+  border-radius:16px;
+  padding:20px 24px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  color:#fff;
+}
+.rs-cta__info-item{ display:flex; align-items:center; gap:14px; }
+.rs-cta__info-icon{
+  flex:none;
+  width:54px; height:54px; border-radius:14px;
+  background:rgba(255,255,255,.18);
+  display:inline-flex; align-items:center; justify-content:center;
+  color:#fff;
+}
+.rs-cta__info-icon svg{ width:26px; height:26px; }
+.rs-cta__info-body{ display:flex; flex-direction:column; line-height:1.3; min-width:0; }
+.rs-cta__info-body small{
+  font-size:14px;
+  color:rgba(255,255,255,.85);
+  letter-spacing:.05em;
+}
+.rs-cta__info-body strong{
+  font-family:"Josefin Sans","Roboto",sans-serif;
+  font-size:24px; letter-spacing:.01em;
+  margin-top:4px; font-weight:700;
+  word-break:keep-all; overflow-wrap:normal;
+}
+.rs-cta__info-item:nth-child(2) .rs-cta__info-body strong{ font-size:18px; }
+
+/* 下段カード: お問い合わせ */
+.rs-cta__contact{
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 14px 40px rgba(0,0,0,.08);
+  padding:40px 48px;
+  display:grid;
+  grid-template-columns:1fr 1.4fr 1.1fr;
+  gap:28px;
+  align-items:start;
+}
+.rs-cta__contact-col{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+.rs-cta__contact-sub{
+  min-height:1.5em;
+  font-size:16px; font-weight:700;
+  color:#2a2a2a;
+  margin:0 0 14px;
+}
+.rs-cta__contact-title{
+  font-size:32px; font-weight:700;
+  color:#4D8E41;
+  margin:0 0 14px;
+  letter-spacing:.04em;
+}
+.rs-cta__contact-desc{
+  font-size:16px; line-height:1.85;
+  color:#2a2a2a; margin:0;
+}
+.rs-cta__tel-link{
+  display:inline-flex; align-items:center; gap:14px;
+  text-decoration:none;
+  color:#4D8E41;
+  font-family:"Josefin Sans","Roboto",sans-serif;
+  font-size:38px; font-weight:700;
+  letter-spacing:.02em;
+  margin-bottom:6px;
+  transition:opacity .2s;
+  white-space:nowrap;
+}
+.rs-cta__tel-link:hover{ opacity:.85; }
+.rs-cta__tel-icon{
+  flex:none;
+  width:44px; height:44px; border-radius:50%;
+  background:#DBE8D8;
+  display:inline-flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.rs-cta__tel-icon img{
+  width:60%; height:60%;
+  object-fit:contain;
+  /* オリジナルは黄緑のアイコン。色味を緑に寄せる */
+  filter:hue-rotate(20deg) saturate(1.1) brightness(.9);
+}
+.rs-cta__tel-icon svg{ width:18px; height:18px; }
+.rs-cta__contact-hours{
+  font-size:15px; color:#666;
+  margin:6px 0 0;
+}
+.rs-cta__form-btn{
+  display:inline-flex; align-items:center; gap:12px;
+  background:#fff;
+  border:2px solid #4D8E41;
+  color:#4D8E41;
+  padding:18px 32px;
+  border-radius:999px;
+  font-size:17px; font-weight:700;
+  text-decoration:none;
+  transition:all .25s;
+  white-space:nowrap;
+}
+.rs-cta__form-btn:hover{ background:#4D8E41; color:#fff; }
+.rs-cta__form-icon{
+  width:22px; height:22px;
+  display:inline-flex; align-items:center; justify-content:center;
+}
+.rs-cta__form-icon svg{ width:20px; height:20px; }
+
+@media (max-width:1023px){
+  .rs-cta__contact{ grid-template-columns:1fr; gap:24px; padding:32px 28px; text-align:center; }
+}
+@media (max-width:575px){
+  .rs-cta__order-main{ padding:32px 24px; gap:16px; }
+  .rs-cta__order-title{ font-size:22px; }
+  .rs-cta__order-badge{ width:44px; height:44px; }
+  .rs-cta__order-badge svg{ width:22px; height:22px; }
+  .rs-cta__pills a{ padding:12px 18px 12px 12px; font-size:14px; }
+  .rs-cta__info{ grid-template-columns:1fr; padding:18px; gap:14px; }
+  .rs-cta__info-body strong{ font-size:16px; }
+  .rs-cta__tel-link{ font-size:28px; }
+}
+
+/* hero copyright — 左端中央寄せに */
+.hero_copyright {
+  position: absolute !important;
+  left: 1.25vw !important;
+  top: 50% !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  z-index: 4;
+}
+.hero_copyright small {
+  /* Sagisaka の縦書きを継続。中央寄せされるよう margin リセット */
+  display: block;
+}
+
+/* hero "scroll" indicator */
+.hero-scroll {
+  position:absolute; left:50%; bottom:14px; transform:translateX(-50%);
+  font-family:'Josefin Sans',sans-serif; font-size:11px; letter-spacing:.3em;
+  color:#4D8E41; display:flex; flex-direction:column; align-items:center; gap:8px;
+  z-index:5; opacity:0;
+}
+.hero.is-in .hero-scroll { animation:ssk-fade-in 1s ease 1.4s forwards; }
+.hero-scroll::after {
+  content:""; display:block; width:1px; height:40px; background:#4D8E41;
+  animation:ssk-scroll-line 2s ease-in-out infinite;
+}
+@keyframes ssk-scroll-line {
+  0%   { transform:scaleY(0); transform-origin:top; }
+  50%  { transform:scaleY(1); transform-origin:top; }
+  51%  { transform-origin:bottom; }
+  100% { transform:scaleY(0); transform-origin:bottom; }
+}
+
+/* strength number counter big */
+.strength_deco--num {
+  font-size:140px; font-weight:700; color:rgba(255,255,255,.15); line-height:1;
+  font-family:'Josefin Sans',sans-serif; letter-spacing:.04em;
+}
+.strength_deco { right:0; top:-40px; pointer-events:none; }
+
+/* badge ping for "新" */
+.new-ping {
+  display:inline-block; background:#d04848; color:#fff; font-size:10px; padding:2px 6px;
+  border-radius:3px; margin-left:6px; vertical-align:middle; font-weight:700;
+  animation:ssk-pulse 1.6s ease-in-out infinite;
+}
+
+/* category circular icon hover spin */
+.category_item img { transition:transform .6s ease; }
+.category_item a:hover img { animation:ssk-spin 8s linear infinite; }
+
+/* Sagisaka main.css の hide-by-default を全打ち消し */
+.home .waypoint,
+.home .waypoint-clip,
+.home .waypoint-fade,
+.home .waypoint-clip-sp,
+.home [class*="waypoint"],
+.home .hero--ttl span > span,
+.home .hero--txt,
+.home .hero_slide.hero-animation,
+.home .app_content--image.waypoint img,
+.home .home_news,
+.home .home_blog,
+.home .home_pickup,
+.home .home_category,
+.home .home_bland,
+.home .home_strength,
+.home .home_company,
+.home .home_eggs,
+.home .home_sns,
+.home .category_item,
+.home .company_link,
+.home .home_post,
+.home .pickup_item,
+.home .strength_photo--inner,
+.home .strength_txt--inner,
+.home .hero_gallery,
+.home .hero_gallery--item,
+.home .hero--bnr {
+  clip-path: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+/* ===== Color contrast safety ===== */
+/* bg-grn セクション内のテキストを白に */
+.bg-grn .pickup_item--ttl,
+.bg-grn .pickup_item--txt,
+.bg-grn .pickup_item--price,
+.bg-grn .strength_txt h3,
+.bg-grn .strength_txt p,
+.bg-grn .company--txt,
+.bg-grn .strendth--icon { color:#fff !important; }
+.bg-grn .pickup_item--price .tax { color:rgba(255,255,255,.7) !important; }
+
+/* ============================================================
+   PICK UP — ゲルコム由来 Slick センターモード (.hero_slider) を流用
+   ============================================================ */
+.home_pickup--slick { padding: 64px 0; overflow: hidden; }
+.home_pickup--slick .pickup--ttl {
+  text-align: center !important;
+  margin: 0 auto 40px !important;
+  padding: 0 !important;
+}
+.home_pickup--slick .hero_slider {
+  position: relative;
+  margin: 0 auto 64px;
+}
+.home_pickup--slick .hero_slider .slick-list { padding: 0 30px; }
+.home_pickup--slick .hero_slider .slick-slide {
+  width: 960px;
+  margin: 0 16px;
+  background-color: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.home_pickup--slick .hero_slider .slick-slide a {
+  display: block;
+}
+.home_pickup--slick .hero_slider .slick-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: contain;          /* バナー画像の左右が切れないように */
+  object-position: center;
+  display: block;
+  background: #fff;
+  opacity: .55;
+  transition: opacity .35s ease;
+}
+.home_pickup--slick .hero_slider .slick-slide.slick-current img,
+.home_pickup--slick .hero_slider .slick-slide.slick-center img {
+  opacity: 1;
+}
+.home_pickup--slick .hero_slider .pickup_item--ttl {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 18px 20px;
+  margin: 0;
+  color: #2a2a2a;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* dots */
+.home_pickup--slick .hero_slider .slick-dots {
+  position: absolute; bottom: -40px;
+  display: block !important;
+  width: 100%; padding: 0; margin: 0;
+  list-style: none; text-align: center;
+}
+.home_pickup--slick .hero_slider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 12px; height: 12px;
+  margin: 0 5px; padding: 0;
+  cursor: pointer;
+}
+.home_pickup--slick .hero_slider .slick-dots li button {
+  font-size: 0; line-height: 0;
+  display: block;
+  width: 12px; height: 12px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0; outline: none;
+  background: transparent;
+}
+.home_pickup--slick .hero_slider .slick-dots li button::before {
+  content: " ";
+  position: absolute; top: 0; left: 0;
+  width: 8px; height: 8px;
+  background-color: rgba(255,255,255,.55);
+  border-radius: 50%;
+}
+.home_pickup--slick .hero_slider .slick-dots li.slick-active button::before {
+  background-color: #fff;
+}
+
+/* prev/next arrows */
+.home_pickup--slick .hero_slider .slide-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+  transition: background .25s ease, transform .25s ease;
+}
+.home_pickup--slick .hero_slider .slide-arrow:hover {
+  background: #4D8E41;
+  transform: translateY(-50%) scale(1.08);
+}
+.home_pickup--slick .hero_slider .slide-arrow img { width: 14px; height: auto; display: block; }
+.home_pickup--slick .hero_slider .slide-arrow.prev-arrow { left: 24px; }
+.home_pickup--slick .hero_slider .slide-arrow.next-arrow { right: 24px; }
+
+@media (max-width: 767px) {
+  .home_pickup--slick .hero_slider .slick-slide { width: 86vw; }
+  .home_pickup--slick .hero_slider .slick-list { padding: 0 16px; }
+  .home_pickup--slick .hero_slider .slide-arrow { display: none !important; }
+  .home_pickup--slick .hero_slider .pickup_item--ttl { font-size: 14px; padding: 12px 14px; }
+}
+
+/* === PICK UP 円形デコ — Sagisaka STRENGTHS を踏襲（旧版） === */
+@keyframes ssk-rotate-img { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.home_pickup .pickup_inner { position:relative; padding-top: 40px; }
+.home_pickup .pickup--ttl {
+  text-align:center !important;
+  margin-left: 0 !important;       /* Sagisaka の margin-left: 8.7vw を打ち消し */
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.home_pickup .pickup_deco {
+  position:absolute;
+  top: -10px;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  pointer-events: none;
+}
+.home_pickup .pickup_deco--left  { left: 16px; }
+.home_pickup .pickup_deco--right { right: 16px; }
+@media (max-width:1200px){
+  .home_pickup .pickup_deco { width:100px; height:100px; top:0; }
+}
+.home_pickup .pickup_deco--img {
+  display:block;
+  width:100%;
+  height:100%;
+  animation: ssk-rotate-img 20s linear infinite;
+}
+.home_pickup .pickup_deco--num {
+  position:absolute;
+  top:0; bottom:0; right:0; left:0;
+  margin:auto;
+  height:1em;
+  font-size:48px;
+  font-style:italic;
+  font-weight:700;
+  line-height:1;
+  color:#f3d9c7;
+  text-align:center;
+  letter-spacing:.02em;
+  font-feature-settings: 'tnum';   /* 等幅数字で 02 → 03 で見た目が崩れない */
+}
+@media (max-width:1080px){
+  .home_pickup .pickup_deco { width:84px; height:84px; top:8px; }
+  .home_pickup .pickup_deco--num { font-size:26px; }
+}
+@media (max-width:767px){
+  .home_pickup .pickup_deco { display:none; }
+}
+
+/* PICK UP カード — transform式自前カルーセル（Slick・scroll-snap不使用） */
+.home_pickup .pickup--wrap {
+  position:relative;
+  padding:0 60px;
+  overflow:hidden;          /* 横はみ出しをクリップ */
+}
+.home_pickup .pickup--list {
+  display:flex !important;
+  gap:0;
+  padding:0;
+  margin:0 0 32px;
+  list-style:none;
+  width:100%;
+  overflow:visible !important;   /* Sagisaka の overflow-x:auto を打ち消し */
+  transition:transform .7s cubic-bezier(.55,.05,.22,.99);
+  will-change:transform;
+  transform:translateX(0);       /* 初期位置を明示 */
+}
+.home_pickup .pickup_item {
+  flex:0 0 50%;       /* PC: 1画面に2枚 */
+  max-width:50%;
+  width:50% !important;
+  margin:0 !important;
+  list-style:none;
+  padding:0 8px;
+  box-sizing:border-box;
+}
+@media (max-width:767px){
+  .home_pickup .pickup_item { flex:0 0 100%; max-width:100%; width:100% !important; }
+}
+.home_pickup .pickup_item--img {
+  max-width:none !important;
+  aspect-ratio:auto !important;
+  margin:0 !important;
+}
+
+/* 矢印ボタン */
+.home_pickup .pickup-nav {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:48px; height:48px; border-radius:50%;
+  background:#fff; border:none; cursor:pointer;
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+  z-index:5; display:flex; align-items:center; justify-content:center;
+  color:#4D8E41; font-size:20px; font-weight:700;
+  transition:background .2s ease, transform .2s ease;
+}
+.home_pickup .pickup-nav:hover { background:#4D8E41; color:#fff; transform:translateY(-50%) scale(1.08); }
+.home_pickup .pickup-prev { left:0; }
+.home_pickup .pickup-next { right:0; }
+.home_pickup .pickup_item article {
+  margin:0 14px;
+}
+.home_pickup .pickup_item .pickup_item--link {
+  background:#fff; color:#2a2a2a;
+  border-radius:14px; padding:0;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  display:flex; flex-direction:column;
+  overflow:hidden;
+  height:420px;
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.home_pickup .pickup_item .pickup_item--link:hover {
+  transform:translateY(-6px);
+  box-shadow:0 14px 32px rgba(0,0,0,.18);
+}
+.home_pickup .pickup_item--ttl { color:#2a2a2a !important; }
+.home_pickup .pickup_item--img {
+  background:#fff; border-radius:0; overflow:hidden;
+  aspect-ratio:auto; margin:0;
+  flex:1 1 auto;        /* 画像が大部分を占める */
+  min-height:0;
+}
+.home_pickup .pickup_item--img img {
+  width:100%; height:100%; object-fit:contain;
+  transition:transform .6s ease; max-width:none;
+  padding:16px;
+}
+.home_pickup .pickup_item .pickup_item--link:hover .pickup_item--img img { transform:scale(1.06); }
+.home_pickup .pickup_item--ttl {
+  font-size:18px; font-weight:700; line-height:1.5;
+  margin:0; padding:20px 24px;
+  text-align:center;
+  background:#fff;
+  border-top:1px solid #eee;
+  flex:0 0 auto;
+}
+
+@media (max-width:767px){
+  .home_pickup .pickup_item .pickup_item--link { height:340px; }
+  .home_pickup .pickup_item--ttl { font-size:15px; padding:14px 16px; }
+}
+
+/* スライダーの矢印 */
+.home_pickup .slick-prev,
+.home_pickup .slick-next {
+  width:48px; height:48px; z-index:5;
+  background:#fff !important; border-radius:50%;
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+.home_pickup .slick-prev { left:1.5%; }
+.home_pickup .slick-next { right:1.5%; }
+.home_pickup .slick-prev:before,
+.home_pickup .slick-next:before {
+  color:#4D8E41; font-size:24px; opacity:1;
+}
+.home_pickup .slick-dots li button:before { color:#fff; opacity:.4; font-size:10px; }
+.home_pickup .slick-dots li.slick-active button:before { color:#fff; opacity:1; }
+
+/* STRENGTHS のカード化 */
+.home_strength .strength_box { gap:32px; align-items:stretch; }
+.home_strength .strength_slide-photo,
+.home_strength .strength_content {
+  flex:1; min-width:300px; background:rgba(255,255,255,.08); padding:24px; border-radius:12px;
+}
+.home_strength .strength_slide-photo img { border-radius:8px; width:100%; height:auto; display:block; }
+.home_strength .strendth--icon {
+  display:inline-block; background:#fff; color:#4D8E41 !important;
+  padding:6px 12px; border-radius:4px; font-weight:700; font-size:13px;
+  margin-right:12px; margin-bottom:12px; line-height:1.2; text-align:center;
+}
+.home_strength .strength_txt h3 { font-size:22px; font-weight:700; line-height:1.5; margin-bottom:16px; }
+.home_strength .strength_txt p { font-size:14px; line-height:1.9; }
+.home_strength .strength_dots { text-align:center; margin-top:24px; }
+.home_strength .strength_dots .slick-dots li button { background:rgba(255,255,255,.4); }
+.home_strength .strength_dots .slick-dots .slick-active button { background:#fff; }
+
+/* CATEGORY カード化 */
+.home_category .category_list { gap:24px; }
+.home_category .category_item {
+  flex:1 1 calc(33.333% - 16px); min-width:200px; max-width:calc(33.333% - 16px);
+  background:#fff; border-radius:12px; padding:24px 16px; text-align:center;
+  box-shadow:0 4px 16px rgba(0,0,0,.05);
+}
+.home_category .category_item a { display:block; }
+.home_category .category_item img {
+  width:140px; height:140px; object-fit:cover; border-radius:50%;
+  display:block; margin:0 auto 16px; background:#DBE8D8; padding:0;
+}
+.home_category .category_item--ttl { font-size:16px; font-weight:700; line-height:1.5; }
+.home_category .category_item--ttl .font-en { display:block; font-size:13px; color:#4D8E41; letter-spacing:.1em; margin-bottom:4px; }
+@media (max-width:767px){
+  .home_category .category_item { flex:1 1 calc(50% - 12px); max-width:calc(50% - 12px); }
+}
+
+/* NEWS の表示整形 */
+.home_news .posts-home_news .post { padding:20px 0; gap:16px; border-bottom:1px solid #e6e6e6; }
+.home_news .post--date { font-size:14px; font-weight:600; color:#888; min-width:100px; }
+.home_news .cat_list a { display:inline-block; background:#DBE8D8; color:#4D8E41; padding:4px 14px; border-radius:999px; font-size:11px; font-weight:700; }
+.home_news .post--ttl a { font-size:15px; font-weight:500; color:#2a2a2a; }
+.home_news .post--ttl { flex:1; }
+
+/* VOICE (home_blog) のカード化 — 最新3件を3列で表示 */
+.home_blog .posts-blog { gap:24px; flex-wrap:wrap; justify-content:center; }
+.home_blog .home_post {
+  flex:1 1 calc(33.333% - 16px); min-width:260px; max-width:calc(33.333% - 16px);
+  background:#fff; border-radius:12px; padding:24px; box-shadow:0 4px 16px rgba(0,0,0,.06);
+  position:relative;          /* NEW! バッジの位置基準 */
+  overflow:visible;           /* 角の NEW! バッジが見切れないように */
+}
+.home_blog .home_post--img {
+  aspect-ratio:4/3; overflow:hidden; border-radius:8px;
+  background:#f5f5f5;
+}
+.home_blog .home_post--img img {
+  width:100%; height:100%;
+  object-fit:cover;
+}
+
+/* カード本文 — 左：人物イラスト / 右：テキスト */
+.home_blog .home_post--body {
+  display:flex; align-items:flex-start; gap:12px;
+}
+.home_blog .home_post--avatar {
+  flex:0 0 56px; width:56px; height:56px;
+  border-radius:50%; overflow:hidden;
+  background:#DBE8D8;
+  display:flex; align-items:flex-end; justify-content:center;
+}
+.home_blog .home_post--avatar img {
+  width:100%; height:100%;
+  object-fit:contain; object-position:bottom;
+}
+.home_blog .home_post--text { flex:1; min-width:0; }
+
+.home_blog .home_post--product {
+  display:inline-block;
+  font-size:11.5px; font-weight:700; color:#4D8E41;
+  background:#DBE8D8; padding:3px 10px;
+  border-radius:999px; margin:0 0 8px;
+  letter-spacing:.02em;
+}
+.home_blog .home_post--ttl {
+  font-size:14px; font-weight:500; line-height:1.6; margin-bottom:8px; color:#2a2a2a;
+  /* 4行で省略 */
+  display:-webkit-box;
+  -webkit-line-clamp:4;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.home_blog .home_post--date { font-size:12px; color:#888; }
+
+/* NEW! バッジ (Sagisaka の .home_post::before) を最前面に固定 */
+.home_blog .home_post::before {
+  z-index:10 !important;
+  pointer-events:none;
+}
+
+@media (max-width:767px){
+  .home_blog .home_post { flex:1 1 100%; max-width:100%; }
+}
+
+/* Sagisaka の .home_company::after が下40%に緑グラデを敷き、
+   COMPANY/CSR カードの上半分まで緑がかぶるので、カード下半分相当に圧縮 */
+.home_company::after {
+  height: 110px !important;
+}
+
+/* COMPANY カード — ③ 準拠：アイコン + テキストの横並びカード */
+.home_company .company_link {
+  flex:1 1 calc(50% - 12px); max-width:calc(50% - 12px);
+  border-radius:18px; overflow:hidden; background:#fff;
+  box-shadow:0 4px 16px rgba(0,0,0,.06) !important;
+  border:2px solid #e6e6e6;
+  transition:all .3s ease;
+  /* Sagisaka の既定（aspect-ratio:2/1 / width:calc(...) / 重いシャドウ）を打ち消し */
+  width:auto !important;
+  aspect-ratio:auto !important;
+}
+.home_company .company_link:hover {
+  border-color:#4D8E41;
+  box-shadow:0 12px 32px rgba(77,142,65,.18) !important;
+}
+.home_company .company_link a {
+  display:flex !important; align-items:center; gap:24px;
+  padding:32px 36px;
+  text-decoration:none; color:inherit;
+  /* Sagisaka の position:absolute h3 / ::before グレーオーバーレイを上書き */
+  position:static !important;
+  overflow:visible !important;
+}
+/* Sagisaka の灰色オーバーレイ・"VIEW MORE" ラベルを完全削除 */
+.home_company .company_link a::before,
+.home_company .company_link a::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+.home_company .company_link--icon {
+  flex:0 0 96px;
+  width:96px; height:96px;
+  display:flex; align-items:center; justify-content:center;
+  background:#DBE8D8; border-radius:50%;
+}
+.home_company .company_link--icon img {
+  width:60%; height:60%; object-fit:contain; display:block;
+}
+.home_company .company_link h3 {
+  flex:1; line-height:1.4; padding:0; margin:0;
+  display:flex !important; flex-direction:column; gap:6px;
+  /* Sagisaka の position:absolute / width:100% / height:100% を上書き */
+  position:static !important;
+  width:auto !important; height:auto !important;
+  align-items:flex-start !important; justify-content:center !important;
+  text-align:left !important;
+  color:inherit !important;
+}
+.home_company .company_link h3 .font-en {
+  display:block; color:#4D8E41;
+  font-family:'Josefin Sans',sans-serif;
+  font-size:28px; font-weight:700; letter-spacing:.06em; line-height:1;
+}
+.home_company .company_link h3 span:last-child {
+  display:block; font-size:18px; font-weight:700; color:#2a2a2a;
+}
+.home_company .company_link--arrow {
+  flex:none; font-family:'Josefin Sans',sans-serif;
+  font-size:26px; color:#4D8E41; font-weight:700;
+  transition:transform .3s ease;
+}
+.home_company .company_link a:hover .company_link--arrow { transform:translateX(6px); }
+@media (max-width:767px){
+  .home_company .company_link { flex:1 1 100%; max-width:100%; }
+  .home_company .company_link a { padding:24px 20px; gap:16px; }
+  .home_company .company_link--icon { flex:0 0 72px; width:72px; height:72px; }
+  .home_company .company_link h3 .font-en { font-size:22px; }
+  .home_company .company_link h3 span:last-child { font-size:16px; }
+}
+
+/* SERIES (home_bland) — 4列の白カード */
+.home_bland .bland_box { gap:16px; flex-wrap:wrap; justify-content:center; }
+.home_bland .bland_box li {
+  flex:1 1 calc(25% - 12px); min-width:200px; max-width:280px;
+  background:#fff; border-radius:12px; padding:32px 20px; text-align:center;
+  box-shadow:0 4px 16px rgba(0,0,0,.06);
+}
+
+/* BTN がリンクなしの場合の見た目補正 */
+.btn { display:inline-block; }
+.btn a {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:14px 36px; min-height:48px; line-height:1;
+  background:#1a1a1a; color:#fff; border-radius:999px;
+  font-family:'Zen Maru Gothic','Noto Sans JP',sans-serif;
+  font-size:14px; letter-spacing:.08em; font-weight:700;
+  transition:background .25s ease, transform .25s ease;
+}
+.btn a:hover { background:#4D8E41; transform:translateY(-2px); }
+.btn-grn a { background:#4D8E41; }
+.btn-grn a:hover { background:#3b7232; }
+.btn-pdf a::after { content:"PDF"; margin-left:10px; background:rgba(255,255,255,.2); font-size:10px; padding:2px 6px; border-radius:2px; font-weight:700; }
+.btn.txt-ctr, .btn.news_btn { display:block; text-align:center; margin-top:32px; }
+
+/* search_box を常時開いた状態に */
+.search_box { width:auto !important; position:relative !important; }
+.search_box--wrap { display:block !important; opacity:1 !important; visibility:visible !important; }
+.search_box-cls { display:none !important; }
+
+/* hero レイアウト調整 — 2枚のスライド画像をクロスフェード
+   Sagisaka main.css の：
+     .hero::before { background: rgba(255,255,255,.45); z-index:1 }  ← 45%白オーバーレイ
+     .hero { background-image: url(.../hero-bg.png); animation: hero-bg-pan 25s ...; }
+   が画像を薄くしていたので完全打ち消し
+   画像は 1672x941 (=16:9) なのでアスペクト比に合わせて全体が映るように */
+.hero {
+  position: relative !important;
+  padding: 0 !important;
+  width: 100%;
+  aspect-ratio: 1672 / 941;     /* 画像比率と完全一致 → 切れない */
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden;
+  background-image: none !important;
+  background-color: transparent !important;
+  animation: none !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;     /* CTAを下寄せ */
+  align-items: center;
+  gap: 0 !important;
+}
+@media (max-width:767px){
+  .hero { aspect-ratio: 4/5; }   /* モバイルでは縦長に */
+}
+.hero::before { display: none !important; content: none !important; }
+.hero__bg {
+  position: absolute; inset: 0;
+  z-index: 0;
+  background-size: cover;        /* 画像とコンテナの比率を揃えてあるので cover でぴったり */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity .8s ease;
+  filter: saturate(1.18) contrast(1.06);
+  mix-blend-mode: normal;
+}
+.hero__bg.is-active { opacity: 1 !important; }
+.hero__bg.bg-1 { background-image: url('cms/wp-content/uploads/hero_main_260521.png'); }
+.hero__bg.bg-2 { background-image: url('cms/wp-content/uploads/hero_support.png'); }
+/* bg-3 — YouTube サムネ。<img> でフォールバック対応 */
+.hero__bg.bg-3 { background: #000; }
+.hero__bg.bg-3 img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  filter: saturate(1.18) contrast(1.06);
+}
+
+/* YouTube 再生ボタン — bg-3 がアクティブの時だけ表示・クリック可 */
+.hero__video-link {
+  position: absolute; inset: 0;
+  z-index: 4;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  opacity: 0; pointer-events: none;
+  transition: opacity .8s ease;
+}
+.hero__bg.bg-3.is-active ~ .hero__video-link {
+  opacity: 1; pointer-events: auto;
+}
+.hero__play {
+  display: inline-flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.55));
+  transition: transform .25s ease;
+}
+.hero__video-link:hover .hero__play { transform: scale(1.08); }
+@media (max-width:767px){
+  .hero__play svg { width: 80px; height: 56px; }
+}
+
+/* ===== ③のHero CTA をそのまま移植 — 緑基調に再着色 ===== */
+.rs-hero__cta {
+  position: relative;
+  z-index: 5;
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+  margin: 0 auto 40px;
+  padding: 0 5vw;
+}
+.rs-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 36px; border-radius: 999px;
+  font-weight: 700; font-size: 15px; text-decoration: none;
+  transition: all .3s; line-height: 1; letter-spacing: .05em;
+}
+.rs-btn.-fill { background: #4D8E41; color: #fff; }
+.rs-btn.-fill:hover { background: #3b7232; transform: translateY(-2px); color: #fff; }
+.rs-btn.-line { background: #fff; color: #4D8E41; border: 2px solid #4D8E41; }
+.rs-btn.-line:hover { background: #4D8E41; color: #fff; }
+.rs-btn::after { content: "→"; font-family: 'Josefin Sans',sans-serif; font-size: 18px; }
+.rs-btn--hero {
+  padding: 10px 30px 10px 10px !important;
+  font-size: 18px !important;
+  gap: 16px !important;
+  letter-spacing: .06em !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+.rs-btn--hero .rs-btn__avatar {
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid rgba(255,255,255,.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+.rs-btn--hero .rs-btn__avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+.rs-btn--hero .rs-btn__avatar--pdf {
+  background: #fff;
+}
+.rs-btn--hero .rs-btn__avatar--pdf img {
+  width: 70%; height: 70%;
+  margin: 15%;
+  object-fit: contain;
+}
+.rs-btn--hero .rs-btn__avatar svg {
+  width: 38px; height: 38px;
+  color: #4D8E41;
+}
+.rs-btn--hero.-line .rs-btn__avatar {
+  border-color: #4D8E41;
+}
+.rs-btn--hero .rs-btn__label {
+  display: inline-flex; align-items: center;
+  line-height: 1;
+}
+.rs-btn--hero::after {
+  font-size: 22px; margin-left: 4px;
+}
+@media (max-width:575px) {
+  .rs-btn--hero { padding: 8px 24px 8px 8px !important; font-size: 14px !important; }
+  .rs-btn--hero .rs-btn__avatar { width: 48px; height: 48px; }
+  .rs-btn--hero::after { font-size: 18px; }
+  .rs-hero__cta { gap: 8px; margin-bottom: 24px; }
+}
+.hero--lft { flex:1.4; position: relative; z-index: 2; }
+.hero .search_box {
+  flex:0 0 360px; background:rgba(255,255,255,.92); backdrop-filter: blur(6px);
+  border-radius:14px; padding:32px;
+  box-shadow:0 12px 32px rgba(0,0,0,.14);
+  position: relative; z-index: 2;
+}
+.hero .search_box--btn li a { display:inline-block; padding:10px 14px; background:#f7f8f5; border-radius:6px; font-size:12px; font-weight:500; }
+.hero--ttl { font-size:clamp(48px, 7vw, 92px); line-height:1; }
+.hero--ttl .grn { color:#4D8E41; }
+.hero_gallery { gap:12px; margin-top:32px; }
+.hero--txt {
+  font-size:18px; color:#2a5e23; font-weight:700;
+  letter-spacing:.06em; margin-bottom:20px;
+  display:inline-block; padding:6px 16px; background:rgba(255,255,255,.7); border-radius:999px;
+}
+@media (max-width:980px){
+  .hero { flex-direction:column; padding:40px 5vw 60px; min-height:auto; }
+  .hero .search_box { flex:1 1 100%; width:100%; }
+}
+
+/* notice 内のリンクとテキストの可読性 */
+.notice_block, .notice_block dd { color:#3a3a3a; }
+
+/* ===== サイドバー（商品から探す）— 階層構造、Sagisaka干渉を完全打ち消し ===== */
+.product_sidebar {
+  width:260px !important;
+  height:auto !important;
+  padding:0 !important;
+  background:#fff !important;
+  border-right:1px solid #eee;
+  flex-shrink:0;
+  position:static !important;
+  overflow:visible !important;
+}
+.product_sidebar .sidebar--ttl {
+  background:#4D8E41 !important; color:#fff;
+  padding:24px 20px !important;
+  margin-bottom:0;
+  height:auto !important;
+  position:relative;
+  display:block !important;
+}
+/* Sagisakaの斜め装飾を消す */
+.product_sidebar .sidebar--ttl::before { display:none !important; }
+.product_sidebar .sidebar--ttl h2 {
+  margin:0 !important; padding:0 !important; border:none !important; color:#fff !important;
+  display:flex !important; flex-direction:column !important; align-items:flex-start !important; gap:6px !important;
+  line-height:1.2 !important;
+}
+.product_sidebar .sidebar--ttl h2 .ja {
+  font-size:14px; font-weight:500; letter-spacing:.06em;
+}
+.product_sidebar .sidebar--ttl h2 .font-en {
+  font-size:26px; font-weight:700; letter-spacing:.08em; line-height:1;
+}
+.product_sidebar .side_cate { list-style:none; padding:0; margin:0; }
+.product_sidebar .side_cate__group {
+  border-bottom:1px solid #e0e0e0;
+  padding-bottom:8px;
+}
+.product_sidebar .side_cate__cat {
+  margin:0; padding:14px 20px 10px;
+  font-size:14px; font-weight:700; color:#2a2a2a;
+  background:#f4f9f2;
+  border-bottom:1px solid #e0e8df;
+}
+.product_sidebar .side_cate__cat a { color:#2a2a2a; text-decoration:none; }
+.product_sidebar .side_cate__cat a:hover { color:#4D8E41; }
+.product_sidebar .side_cate__sub { list-style:none; padding:0; margin:0; }
+.product_sidebar .side_cate__sub li a {
+  display:block; padding:10px 20px 10px 32px;
+  font-size:13px; color:#444; text-decoration:none;
+  border-bottom:1px dotted #e8e8e8;
+  position:relative;
+}
+.product_sidebar .side_cate__sub li a::before {
+  content:"›"; position:absolute; left:18px;
+  color:#4D8E41; font-weight:700;
+}
+.product_sidebar .side_cate__sub li a:hover { background:#f7f8f5; color:#4D8E41; padding-left:36px; }
+.product_sidebar .side_cate__sub li:last-child a { border-bottom:none; }
+.product_sidebar .side_cate__sub-cat {
+  margin:0; padding:10px 20px 6px 28px;
+  font-size:12px; font-weight:700; color:#4D8E41;
+  letter-spacing:.04em;
+  background:#fafcf9;
+  border-top:1px dashed #e0e0e0;
+}
+.right_content { flex:1; min-width:0; padding:0 24px; }
+@media (max-width:1080px){
+  .product_sidebar { display:none; }
+  .right_content { padding:0; }
+}
+
+/* （フッターのスタイルは上部 ===== フッター（オリジナル準拠） ===== に統一） */
+/* Sagisaka の .footer--nav a::before（左に出る緑の横線）を打ち消し */
+.footer .footer--nav a::before { display: none !important; content: none !important; }
+.footer .footer--nav a { padding-left: 0 !important; }
+
+/* ===== ALL PRODUCTS section ===== */
+.home_allproducts .ap-group { margin-bottom:56px; }
+.home_allproducts .ap-group:last-of-type { margin-bottom:32px; }
+.home_allproducts .ap-group__ttl {
+  display:flex; flex-direction:column; align-items:flex-start;
+  font-size:32px; font-weight:700; margin-bottom:32px;
+  padding-left:18px; border-left:6px solid #4D8E41; line-height:1.4;
+  color:#1a1a1a;
+}
+.home_allproducts .ap-group__ttl .font-en {
+  font-size:17px; color:#4D8E41; letter-spacing:.16em; margin-bottom:6px; font-weight:700;
+}
+.home_allproducts .ap-grid {
+  display:grid; gap:20px;
+  grid-template-columns:repeat(4, 1fr);
+}
+@media (max-width:1080px){ .home_allproducts .ap-grid { grid-template-columns:repeat(3, 1fr); } }
+@media (max-width:767px){ .home_allproducts .ap-grid { grid-template-columns:repeat(2, 1fr); } }
+.home_allproducts .ap-card {
+  display:flex; flex-direction:column; background:#fff; border-radius:12px; overflow:hidden;
+  box-shadow:0 4px 16px rgba(0,0,0,.06); transition:transform .3s ease, box-shadow .3s ease;
+}
+.home_allproducts .ap-card:hover {
+  transform:translateY(-6px); box-shadow:0 14px 28px rgba(77,142,65,.18);
+}
+.home_allproducts .ap-card__img {
+  aspect-ratio:4/3; overflow:hidden; background:#f5f5f5;
+}
+.home_allproducts .ap-card__img img {
+  width:100%; height:100%; object-fit:cover; transition:transform .6s ease;
+}
+.home_allproducts .ap-card:hover .ap-card__img img { transform:scale(1.08); }
+.home_allproducts .ap-card__name {
+  padding:18px 18px 6px; font-size:19px; font-weight:700; line-height:1.5; color:#1a1a1a;
+}
+.home_allproducts .ap-card__name span {
+  display:block; font-size:14px; color:#4D8E41; font-weight:700; margin-top:4px; letter-spacing:.04em;
+}
+.home_allproducts .ap-card__price {
+  padding:8px 16px 16px; margin-top:auto;
+  font-size:15px; font-weight:700; color:#d04848;
+}
+.home_allproducts .ap-card__price .tax {
+  display:inline-block; font-size:12px; color:#555; font-weight:500; margin-left:4px;
+}
+
+/* --- detail card (主要商品 詳細表示) — div + data-href --- */
+.home_allproducts .ap-grid--detail { grid-template-columns:1fr; margin-bottom:24px; gap:16px; }
+.home_allproducts .ap-card--detail {
+  display:grid;
+  grid-template-columns:380px 1fr;
+  grid-template-rows:auto;
+  gap:0;
+  align-items:stretch;
+  cursor:pointer;
+}
+@media (max-width:767px){
+  .home_allproducts .ap-card--detail { grid-template-columns:1fr; }
+}
+.home_allproducts .ap-card--detail .ap-card__img {
+  aspect-ratio:auto !important;
+  height:100%;
+  min-height:280px;
+  align-self:stretch;
+}
+.home_allproducts .ap-card--detail .ap-card__img img {
+  width:100%; height:100%; object-fit:cover;
+}
+.home_allproducts .ap-card--detail .ap-card__body {
+  padding:24px 28px;
+  display:flex !important; flex-direction:column !important;
+  gap:10px;
+}
+.home_allproducts .ap-card__desc {
+  font-size:15px; line-height:1.75; color:#222; margin:0;
+}
+.home_allproducts .ap-card__list {
+  list-style:none; padding:0; margin:4px 0; font-size:14px; line-height:1.85; color:#222;
+}
+.home_allproducts .ap-card__list li::before {
+  content:"・"; color:#4D8E41; font-weight:700;
+}
+.home_allproducts .ap-card__note {
+  font-size:13px; color:#d04848; font-weight:700; line-height:1.65; margin:0;
+  padding:8px 10px; background:rgba(208,72,72,.08); border-left:3px solid #d04848; border-radius:0 4px 4px 0;
+}
+.home_allproducts .ap-card__warn {
+  font-size:14px; color:#ff6600; font-weight:700; margin:0;
+}
+.home_allproducts .ap-card__prices {
+  margin-top:auto; padding-top:12px; border-top:1px solid #eee;
+  display:flex; flex-direction:column; gap:8px;
+}
+.home_allproducts .ap-card__price-row {
+  display:flex; gap:10px; align-items:baseline;
+}
+.home_allproducts .ap-card__price-row .cat {
+  display:inline-block; background:#4D8E41; color:#fff; font-size:12px;
+  padding:4px 12px; border-radius:3px; font-weight:700; letter-spacing:.1em;
+  min-width:64px; text-align:center; flex-shrink:0;
+}
+.home_allproducts .ap-card__price-row .cat.rent { background:#6b6b6b; }
+.home_allproducts .ap-card__price-row .val {
+  font-size:17px; font-weight:700; color:#d04848;
+}
+.home_allproducts .ap-card__price-row .val.small { font-size:14px; color:#222; font-weight:600; }
+.home_allproducts .ap-card__price-row .val small {
+  font-size:12px; color:#555; font-weight:500; margin-left:4px;
+}
+
+/* --- small card (小型・付属品) — 詰めすぎず2段でもOK --- */
+.home_allproducts .ap-grid--sm { grid-template-columns:repeat(4, 1fr); gap:20px; margin-bottom:24px; }
+@media (max-width:1080px){ .home_allproducts .ap-grid--sm { grid-template-columns:repeat(3, 1fr); } }
+@media (max-width:767px){ .home_allproducts .ap-grid--sm { grid-template-columns:repeat(2, 1fr); } }
+.home_allproducts .ap-card--sm .ap-card__img { aspect-ratio:4/3; }
+.home_allproducts .ap-card--sm .ap-card__name { padding:16px 18px 8px; font-size:18px; line-height:1.5; font-weight:700; color:#1a1a1a; }
+.home_allproducts .ap-card--sm .ap-card__price { padding:6px 16px 16px; font-size:15px; line-height:1.65; }
+.home_allproducts .ap-card--sm .ap-card__price small { display:inline; font-size:12px; color:#555; }
+
+/* sub heading (付属品) */
+.home_allproducts .ap-sub__ttl {
+  display:flex; align-items:center; gap:12px;
+  font-size:22px; font-weight:700; margin:32px 0 18px; color:#1a1a1a;
+}
+.home_allproducts .ap-sub__ttl::before {
+  content:""; display:inline-block; width:5px; height:22px; background:#4D8E41; border-radius:2px;
+}
+
+/* ALL PRODUCTS の補足表記 */
+.home_allproducts .ap-card__feature-ttl {
+  font-size:15px; font-weight:700; color:#1a1a1a; margin:8px 0 4px;
+}
+.home_allproducts .ap-card__links {
+  display:flex; flex-wrap:wrap; gap:8px 16px; margin:8px 0 4px;
+  font-size:14px;
+}
+.home_allproducts .ap-card__links a {
+  color:#993300; font-weight:700; text-decoration:underline;
+}
+.home_allproducts .ap-card__small {
+  font-size:13px; color:#444; line-height:1.65; margin:4px 0;
+}
+.home_allproducts .ap-card__alert {
+  font-size:15px; font-weight:700; margin:6px 0;
+}
+.home_allproducts .ap-card__alert a { color:#ff6600; text-decoration:underline; }
+
+/* ap-card--sm 内の補足説明 */
+.home_allproducts .ap-card--sm .ap-card__small {
+  padding:0 16px; font-size:12.5px; line-height:1.6; color:#555; margin:0 0 4px;
+}
+
+/* ===== Hero banner carousel (transform 駆動・自動2秒) ===== */
+.hero-banner__wrap {
+  position:relative;
+  padding:0 60px;
+  overflow:hidden;
+}
+.hero-banner__slider {
+  display:flex;
+  transition:transform .7s cubic-bezier(.55,.05,.22,.99);
+  will-change:transform;
+}
+.hero-banner__item {
+  flex:0 0 100%;
+  max-width:100%;
+  padding:0 8px;
+  box-sizing:border-box;
+}
+.hero-banner__item a {
+  display:block;
+  border-radius:14px; overflow:hidden;
+  background:#f7f8f5;
+  box-shadow:0 8px 24px rgba(0,0,0,.10);
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.hero-banner__item a:hover {
+  transform:translateY(-4px);
+  box-shadow:0 14px 32px rgba(77,142,65,.18);
+}
+.hero-banner__item img {
+  width:100%; height:auto; display:block;
+  max-width:100%;
+}
+
+/* YouTube 埋め込みスライド — サムネ + 再生ボタンオーバーレイ */
+.hero-banner__item--video a {
+  position:relative;
+  background:#000;
+}
+.hero-banner__item--video img {
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}
+.hero-banner__play {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width:88px; height:62px;
+  display:flex; align-items:center; justify-content:center;
+  pointer-events:none;
+  filter:drop-shadow(0 4px 12px rgba(0,0,0,.4));
+  opacity:.92;
+  transition:opacity .25s ease, transform .25s ease;
+}
+.hero-banner__play svg { width:100%; height:100%; display:block; }
+.hero-banner__item--video a:hover .hero-banner__play {
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1.08);
+}
+@media (max-width:767px){
+  .hero-banner__play { width:64px; height:46px; }
+}
+
+/* 矢印ボタン */
+.hero-banner__nav {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:44px; height:44px; border-radius:50%;
+  background:#fff; border:none; cursor:pointer;
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+  z-index:5; display:flex; align-items:center; justify-content:center;
+  color:#4D8E41; font-size:20px; font-weight:700;
+  transition:background .2s ease, transform .2s ease;
+}
+.hero-banner__nav:hover { background:#4D8E41; color:#fff; transform:translateY(-50%) scale(1.08); }
+.hero-banner__prev { left:0; }
+.hero-banner__next { right:0; }
+@media (max-width:767px){
+  .hero-banner__item img { aspect-ratio:4/3; }
+  .hero-banner__wrap { padding:0 40px; }
+}
+</style>
+
+</head>
+
+
+<body class="home" id="top">
+
+<header class="header">
+  <div class="inner flex flex-j-between flex-a-ctr">
+    <h1 class="header--logo">
+      <a href="index.html">
+        <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/logo.png" alt="松原企業株式会社福祉介護事業部 SSKケアハート">
+      </a>
+    </h1>
+    <div class="header--menu">
+      <nav class="p-sub-menu">
+        <p class="p-sub-menu__fax"><span>FAX.</span>073-494-6682</p>
+        <p class="p-sub-menu__tel">
+          <a href="tel:073-494-6681">073-494-6681</a>
+          <span>受付時間／平日9:00〜17:00</span>
+        </p>
+      </nav>
+      <nav class="header--nav">
+        <div class="gnav_btn pc-none-flex flex-j-ctr flex-c-wrap flex-a-ctr">
+          <div class="gnav_btn--lines"><span></span><span></span><span></span></div>
+          <span class="font-en">MENU</span>
+        </div>
+        <ul class="gnav--list flex flex-sp-block">
+          <li><a href="products.html"><span>商品紹介</span></a></li>
+          <li><a href="voice.html"><span>お客様の声</span></a></li>
+          <li><a href="faq.html"><span>よくある質問</span></a></li>
+          <li><a href="information.html"><span>新着情報</span></a></li>
+          <li><a href="index.html%3Fp=9.html"><span>会社案内</span></a></li>
+          <li><a href="cms/wp-content/uploads/catalog_260507.pdf" target="_blank"><span>最新カタログ</span></a></li>
+          <li><a href="cms/contact/index.html"><span>お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="hero__bg bg-1 is-active" aria-hidden="true"></div>
+    <div class="hero__bg bg-2" aria-hidden="true"></div>
+    <div class="hero__bg bg-3" aria-hidden="true">
+      <img src="https://img.youtube.com/vi/io9CsfkCdaI/maxresdefault.jpg" alt="" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/io9CsfkCdaI/hqdefault.jpg';">
+    </div>
+    <a href="https://youtu.be/io9CsfkCdaI" target="_blank" rel="noopener" class="hero__video-link" aria-label="YouTube動画を開く">
+      <span class="hero__play" aria-hidden="true">
+        <svg viewBox="0 0 68 48" width="120" height="84">
+          <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#ff0000"/>
+          <path d="M 45,24 27,14 27,34" fill="#fff"/>
+        </svg>
+      </span>
+    </a>
+    <div class="rs-hero__cta">
+      <a href="products.html" class="rs-btn -line rs-btn--hero">
+        <span class="rs-btn__avatar">
+          <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_rakudan_top01.jpg" alt="可搬型階段昇降機らく段">
+        </span>
+        <span class="rs-btn__label">商品を見る</span>
+      </a>
+      <a href="tel:073-494-6681" class="rs-btn -line rs-btn--hero">
+        <span class="rs-btn__avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="rs-btn__label">電話でお問い合わせ</span>
+      </a>
+      <a href="#cta_block" class="rs-btn -line rs-btn--hero js-scroll-to-cta">
+        <span class="rs-btn__avatar rs-btn__avatar--pdf" aria-hidden="true">
+          <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/icon-pdf.png" alt="">
+        </span>
+        <span class="rs-btn__label">注文書ダウンロード</span>
+      </a>
+    </div>
+    <p class="hero_copyright font-en"><small>© 2025 松原企業株式会社 SSK CARE HEART.</small></p>
+  </section><!-- #hero -->
+
+
+  <div class="content-wrap pos_rel flex flex-c-wrap">
+
+    <aside class="product_sidebar sp-none">
+      <div class="sidebar--ttl">
+        <h2><span class="ja">商品から探す</span><span class="font-en">PRODUCTS</span></h2>
+      </div>
+      <ul class="side_cate">
+        <li class="side_cate__group">
+          <p class="side_cate__cat"><a href="products.html">らく段シリーズ</a></p>
+          <ul class="side_cate__sub">
+            <li><a href="index.html%3Fp=98.html">可搬型階段昇降機らく段</a></li>
+            <li><a href="index.html%3Fp=119.html">荷物用らく段 NEWボギー</a></li>
+            <li><a href="index.html%3Fp=646.html">らく段セパレート</a></li>
+            <li><a href="index.html%3Fp=554.html">らくちん移動機</a></li>
+          </ul>
+          <p class="side_cate__sub-cat">付属品</p>
+          <ul class="side_cate__sub">
+            <li><a href="index.html%3Fp=127.html">クローラーベルト</a></li>
+            <li><a href="index.html%3Fp=129.html">専用バッテリー</a></li>
+          </ul>
+        </li>
+        <li class="side_cate__group">
+          <p class="side_cate__cat"><a href="products.html">救急搬送・福祉器具</a></p>
+          <ul class="side_cate__sub">
+            <li><a href="index.html%3Fp=131.html">搬送用昇降ストレッチャーC</a></li>
+            <li><a href="index.html%3Fp=134.html">両開き式電動ストレッチャー</a></li>
+            <li><a href="index.html%3Fp=136.html">フォルディングストレッチャー（オレンジ）</a></li>
+            <li><a href="index.html%3Fp=138.html">フォルディングストレッチャー（グリーン/オレンジ）</a></li>
+            <li><a href="index.html%3Fp=140.html">スクープストレッチャー</a></li>
+          </ul>
+          <p class="side_cate__sub-cat">付属品</p>
+          <ul class="side_cate__sub">
+            <li><a href="index.html%3Fp=146.html">ハイエース専用ファスナー</a></li>
+            <li><a href="index.html%3Fp=152.html">安全ベルト</a></li>
+            <li><a href="index.html%3Fp=154.html">キャスター</a></li>
+            <li><a href="index.html%3Fp=156.html">パックラック</a></li>
+            <li><a href="index.html%3Fp=158.html">どこでも点滴棒・架台</a></li>
+            <li><a href="index.html%3Fp=160.html">酸素ボンベ架台</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="right_content">
+
+      <!-- ============ PICK UP（4バナー）— ゲルコム由来 Slick センターモード + ぐるぐるデコ ============ -->
+      <section class="section_pdg home_pickup home_pickup--slick bg-grn" id="home_pickup">
+        <div class="pickup_inner pos_rel">
+          <!-- ぐるぐる回る円形テキスト＋番号（左：表示中／右：次） -->
+          <div class="pickup_deco pickup_deco--left" aria-hidden="true">
+            <svg class="pickup_deco--img" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <path id="pickup_deco_path_l" fill="none"
+                  d="M 104,104 m -84,0 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0" />
+              </defs>
+              <text fill="#f3d9c7" font-family="'Josefin Sans',sans-serif" font-size="20" font-weight="600" letter-spacing="3">
+                <textPath href="#pickup_deco_path_l" startOffset="0">PICK UP ★ PICK UP ★ PICK UP ★ PICK UP ★</textPath>
+              </text>
+            </svg>
+            <span class="pickup_deco--num font-en" id="pickup_deco_num_l">01</span>
+          </div>
+          <h2 class="pickup--ttl section_ttl r-up"><span class="font-en">PICK UP!</span></h2>
+          <div class="hero_slider">
+            <div class="item">
+              <a href="https://www.youtube.com/watch?v=f3zlZIbWMxE" target="_blank" rel="noopener">
+                <img src="cms/wp-content/uploads/rakudan_youtube_260227_l.jpg" width="640" height="400" alt="らく段紹介動画">
+              </a>
+            </div>
+            <div class="item">
+              <a href="cms/rakudan_kaigonintei/index.html">
+                <img src="cms/wp-content/uploads/kaigonintei_banner2.jpg" width="640" height="400" alt="らく段 介護認定について">
+              </a>
+            </div>
+            <div class="item">
+              <a href="cms/products/w5w-w5g/index.html">
+                <img src="cms/wp-content/uploads/pic_jumbotron01.jpg" width="640" height="400" alt="可搬型階段昇降機らく段">
+              </a>
+            </div>
+            <div class="item">
+              <a href="cms/products/w7w/index.html">
+                <img src="cms/wp-content/uploads/pic_jumbotron03_260220.jpg" width="640" height="400" alt="荷物用らく段 NEWボギー">
+              </a>
+            </div>
+          </div>
+          <div class="btn btn-blk txt-ctr">
+            <a href="products.html">すべての商品を見る</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============ News (NEWS + Instagram + Facebook 3カラム) — オリジナルrs-sns準拠 ============ -->
+      <section class="rs-section rs-sns -bg" id="rs-sns">
+        <div class="rs-section__inner">
+          <div class="rs-section__head">
+            <h2 class="section_ttl r-up"><span class="font-en">INFORMATION</span>／新着情報</h2>
+            <p class="rs-section__lead">FacebookとInstagramで日々の活動・新製品情報を発信しています。</p>
+          </div>
+          <div class="rs-sns__grid">
+
+            <!-- Instagram -->
+            <section class="rs-sns__col">
+              <div class="rs-sns__head -ig">
+                <span class="rs-sns__ic" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                </span>
+                <span class="rs-sns__info">
+                  <span class="rs-sns__label">INSTAGRAM</span>
+                  <span class="rs-sns__handle">@ssk_careheart</span>
+                </span>
+                <span class="rs-sns__cta">フォロー</span>
+              </div>
+              <div class="rs-sns__feed -ig">
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_rakudan_top01.jpg" alt="らく段"></div>
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_newbogey_top01_260220.jpg" alt="NEWボギー"></div>
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_c_top01.jpg" alt="ストレッチャーC"></div>
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_e_stocon_top01.jpg" alt="Eストコン"></div>
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/らく段セパレートtop.jpg" alt="らく段セパレート"></div>
+                <div class="rs-sns__post -ig"><img src="https://syogen-careheart.com/cms/wp-content/uploads/らくちん移動機1800x1200.jpg" alt="らくちん移動機"></div>
+              </div>
+              <div class="rs-sns__more">
+                <span>投稿をもっと見る</span>
+                <span class="rs-sns__more-arrow">→</span>
+              </div>
+            </section>
+
+            <!-- Facebook -->
+            <section class="rs-sns__col">
+              <div class="rs-sns__head -fb">
+                <span class="rs-sns__ic" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M13.5 21v-7h2.4l.36-2.8H13.5V9.4c0-.81.22-1.36 1.39-1.36h1.48V5.5C16.11 5.46 15.23 5.4 14.21 5.4c-2.12 0-3.58 1.3-3.58 3.67v2.13H8.25V14h2.38v7h2.87z"/></svg>
+                </span>
+                <span class="rs-sns__info">
+                  <span class="rs-sns__label">FACEBOOK</span>
+                  <span class="rs-sns__handle">松原企業株式会社 福祉介護事業部</span>
+                </span>
+                <span class="rs-sns__cta">いいね！</span>
+              </div>
+              <ul class="rs-sns__feed -fb">
+                <li class="rs-sns__post -fb">
+                  <div class="rs-sns__post-img"><img src="cms/wp-content/uploads/kaigonintei_banner2.jpg" alt="介護認定"></div>
+                  <div class="rs-sns__post-body">
+                    <p class="rs-sns__post-date">2026.04.28</p>
+                    <p class="rs-sns__post-text">和歌山営業所が移転いたしました！より広いショールームでらく段シリーズを実際に体感いただけます。</p>
+                    <div class="rs-sns__post-meta">
+                      <span class="-like">♥ 24</span>
+                      <span class="-cmt">💬 3</span>
+                      <span class="-share">↗ 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="rs-sns__post -fb">
+                  <div class="rs-sns__post-img"><img src="cms/wp-content/uploads/pic_jumbotron01.jpg" alt="最新カタログ"></div>
+                  <div class="rs-sns__post-body">
+                    <p class="rs-sns__post-date">2026.03.10</p>
+                    <p class="rs-sns__post-text">最新カタログVol.2を公開しました。らく段シリーズの最新ラインナップを掲載しています。</p>
+                    <div class="rs-sns__post-meta">
+                      <span class="-like">♥ 18</span>
+                      <span class="-cmt">💬 2</span>
+                      <span class="-share">↗ 5</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="rs-sns__post -fb">
+                  <div class="rs-sns__post-img"><img src="cms/wp-content/uploads/pic_jumbotron03_260220.jpg" alt="東京営業所"></div>
+                  <div class="rs-sns__post-body">
+                    <p class="rs-sns__post-date">2026.02.01</p>
+                    <p class="rs-sns__post-text">東京営業所を開設いたしました！関東エリアのお客様への対応がよりスムーズになります。</p>
+                    <div class="rs-sns__post-meta">
+                      <span class="-like">♥ 32</span>
+                      <span class="-cmt">💬 4</span>
+                      <span class="-share">↗ 7</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="rs-sns__more">
+                <span>投稿をもっと見る</span>
+                <span class="rs-sns__more-arrow">→</span>
+              </div>
+            </section>
+
+            <!-- NEWS（新着情報） -->
+            <section class="rs-sns__col">
+              <div class="rs-sns__head -news">
+                <span class="rs-sns__ic" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 4h13v16H4z"/><path d="M17 8h3v9a3 3 0 0 1-3 3"/><line x1="7" y1="8" x2="14" y2="8"/><line x1="7" y1="12" x2="14" y2="12"/><line x1="7" y1="16" x2="11" y2="16"/></svg>
+                </span>
+                <span class="rs-sns__info">
+                  <span class="rs-sns__label">NEWS</span>
+                  <span class="rs-sns__handle">新着情報</span>
+                </span>
+              </div>
+              <ul class="rs-sns__feed -news">
+                <li class="rs-sns__post -news">
+                  <a href="index.html%3Fp=998.html">
+                    <p class="rs-sns__post-date">2026.04.28</p>
+                    <p class="rs-sns__post-cat">ニュース</p>
+                    <p class="rs-sns__post-text">和歌山営業所 移転のお知らせ</p>
+                  </a>
+                </li>
+                <li class="rs-sns__post -news">
+                  <a href="index.html%3Fp=992.html">
+                    <p class="rs-sns__post-date">2026.03.10</p>
+                    <p class="rs-sns__post-cat">ニュース</p>
+                    <p class="rs-sns__post-text">最新カタログVol.2を更新いたしました</p>
+                  </a>
+                </li>
+                <li class="rs-sns__post -news">
+                  <a href="index.html%3Fp=991.html">
+                    <p class="rs-sns__post-date">2026.02.01</p>
+                    <p class="rs-sns__post-cat">ニュース</p>
+                    <p class="rs-sns__post-text">東京営業所開設</p>
+                  </a>
+                </li>
+              </ul>
+              <a class="rs-sns__more -clickable" href="information.html">
+                <span>新着情報一覧</span>
+                <span class="rs-sns__more-arrow">→</span>
+              </a>
+            </section>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BLOG → お客様の声 ============ -->
+      <section class="section_pdg home_blog bg-lgrn" id="home_blog">
+        <div class="right_inner">
+          <h2 class="section_ttl r-up"><span class="font-en">VOICE</span>／お客様の声</h2>
+          <div class="posts posts-blog flex flex-j-between mgn-btm40">
+            <article class="home_post pos_rel flex flex-column r-up">
+              <div class="home_post--img mgn-btm32">
+                <img width="300" height="225" src="https://syogen-careheart.com/cms/wp-content/uploads/pic_newbogey_top01_260220.jpg" class="img-cover" alt="荷物用らく段 NEWボギー">
+              </div>
+              <div class="home_post--body">
+                <div class="home_post--avatar">
+                  <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/img_voice_man01.png" alt="お客様 イラスト">
+                </div>
+                <div class="home_post--text">
+                  <p class="home_post--product">荷物用らく段 NEWボギー</p>
+                  <a href="voice.html" class="post--link">
+                    <h3 class="home_post--ttl fz-20 mgn-btm16">現場の機材を運ぶ際に利用させてもらっています。今まで階段では機材を持って運んでいたので腰に負担を与えていましたが、電動で...</h3>
+                  </a>
+                  <p class="home_post--date fz-14 font-en">工事現場監督（50代）</p>
+                </div>
+              </div>
+            </article>
+            <article class="home_post pos_rel flex flex-column r-up">
+              <div class="home_post--img mgn-btm32">
+                <img width="300" height="225" src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_c_top01.jpg" class="img-cover" alt="搬送用昇降ストレッチャーC">
+              </div>
+              <div class="home_post--body">
+                <div class="home_post--avatar">
+                  <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/img_voice_woman01.png" alt="お客様 イラスト">
+                </div>
+                <div class="home_post--text">
+                  <p class="home_post--product">搬送用昇降ストレッチャーC</p>
+                  <a href="voice.html" class="post--link">
+                    <h3 class="home_post--ttl fz-20 mgn-btm16">リーズナブルなストレッチャーを探していたところ、HPを見て購入しました。最初は安価なストレッチャーなので心配していました...</h3>
+                  </a>
+                  <p class="home_post--date fz-14 font-en">病院看護師（50代）</p>
+                </div>
+              </div>
+            </article>
+            <article class="home_post pos_rel flex flex-column r-up">
+              <div class="home_post--img mgn-btm32">
+                <img width="300" height="225" src="https://syogen-careheart.com/cms/wp-content/uploads/pic_e_stocon_top01.jpg" class="img-cover" alt="両開き式電動ストレッチャー Eストコン">
+              </div>
+              <div class="home_post--body">
+                <div class="home_post--avatar">
+                  <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/img_voice_man01.png" alt="お客様 イラスト">
+                </div>
+                <div class="home_post--text">
+                  <p class="home_post--product">両開き式電動ストレッチャー Eストコン</p>
+                  <a href="voice.html" class="post--link">
+                    <h3 class="home_post--ttl fz-20 mgn-btm16">ストレッチャーがコンパクトになるので常時車の助手席に積んで必要な時に使用させていただいています。今までは必要な時に一度...</h3>
+                  </a>
+                  <p class="home_post--date fz-14 font-en">介護タクシー経営者（40代）</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="btn btn-blk txt-ctr">
+            <a href="voice.html">もっと見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NOTICE ============ -->
+      <section class="section_pdg" style="padding-top:80px;">
+        <div class="right_inner">
+          <dl class="notice_block">
+            <dt>注　意<span>可搬型階段昇降機「らく段」について</span></dt>
+            <dd>
+              <ul>
+                <li>注1．他社において令和8年1月1日以降、当社商品と類似した名称・デザインの商品が販売されており、これらの商品とはなんら関りがなく、当社が製造・検査・品質管理を行っていない商品であり、当社商品は管理番号で管理されておりますのでお気をつけください。</li>
+                <li>注2．令和7年12月31日以前に購入されたお客様については、公益財団法人テクノエイド協会が発行している弊社TAISコードを御使用してください。</li>
+                <li>注3．令和8年1月1日以降、他社類似商品は、公益財団法人テクノエイド協会発行の当社TAISコードは一切使用できませんので、お客様におかれましては十分ご注意ください。</li>
+                <li>注4．他社において、可搬型階段昇降機安全指導員講習講師資格 機種別講習講師「らく段」の講習講師資格がありません。また、指導員許可証も発行できない為、公益財団法人テクノエイド協会からの認定証・資格証も発行できませんのでお気をつけください。</li>
+              </ul>
+              <p>正規の品質保証・アフターサービス・講習は、必ず当社正規販売ルートにお問い合わせください。</p>
+              <p>◆公益財団法人テクノエイド協会ホームページ　<a href="https://www.techno-aids.or.jp/" target="_blank" rel="noopener">https://www.techno-aids.or.jp/</a></p>
+              <p class="sign">株式会社松原企業株式会社（ショウゲンキギョウ）</p>
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <!-- ============ ALL PRODUCTS（商品全て） ============ -->
+      <section class="section_pdg home_allproducts bg-lgrn" id="home_allproducts">
+        <div class="right_inner">
+          <h2 class="section_ttl r-up"><span class="font-en">ALL PRODUCTS</span>／取扱商品一覧</h2>
+
+          <!-- ===== らく段シリーズ ===== -->
+          <div class="ap-group">
+            <h3 class="ap-group__ttl"><span class="font-en">RAKUDAN SERIES</span>らく段シリーズ</h3>
+
+            <div class="ap-grid ap-grid--detail">
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=98.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_rakudan_top01.jpg" alt="可搬型階段昇降機らく段"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">可搬型階段昇降機らく段 <span>[W5W／W5G]</span></h4>
+                  <p class="ap-card__desc">階段介護の負担軽減に強い味方！ 強いグリップ力のクローラー式階段昇降機</p>
+                  <ul class="ap-card__list">
+                    <li>折畳式でコンパクト収納可能</li>
+                    <li>昇降時用ハンドル高さ3段階切り替え</li>
+                  </ul>
+                  <p class="ap-card__links">
+                    <a href="cms/information/価格改定のお知らせ/" target="_blank" rel="noopener">＊価格改定について</a>
+                    <a href="cms/information/お客様に感謝を込めてキャンペーン」実施中！/" target="_blank" rel="noopener">＊キャンペーン対象商品</a>
+                  </p>
+                  <p class="ap-card__small">＊一般レンタル価格は令和5年9月20日より変更となります。</p>
+                  <p class="ap-card__alert"><a href="cms/information/可搬型階段昇降機安全指導員講習について/" target="_blank" rel="noopener">＊可搬型階段昇降機安全指導員講習について</a></p>
+                  <p class="ap-card__note">介護保険適用でのレンタルについては適用の要件があり、お住まいの地域の貸与事業所とレンタル期間も含めて交渉が必要となります。</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">748,000円<small>（税抜価格 680,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=119.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_newbogey_top01_260220.jpg" alt="荷物用らく段 NEWボギー"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">荷物用らく段 NEWボギー <span>[W7W]</span></h4>
+                  <p class="ap-card__desc">荷物用クローラー式階段昇降機は、重たい荷物を運ぶ階段の上り下りにとっても便利！</p>
+                  <ul class="ap-card__list">
+                    <li>スピード三段階切替え可能</li>
+                    <li>折りたたみ式のコンパクト設計</li>
+                  </ul>
+                  <p class="ap-card__links">
+                    <a href="cms/information/価格改定のお知らせ/" target="_blank" rel="noopener">＊価格改定について</a>
+                    <a href="cms/information/お客様に感謝を込めてキャンペーン」実施中！/" target="_blank" rel="noopener">＊キャンペーン対象商品</a>
+                  </p>
+                  <p class="ap-card__small">＊一般レンタル価格は令和5年9月20日より変更となります。</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">418,000円<small>（税抜価格 380,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=646.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/らく段セパレートtop.jpg" alt="らく段セパレート"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">らく段セパレート <span>[MC-3A／MC-3B／MC-3C／MC-6D]</span></h4>
+                  <p class="ap-card__desc"><span class="new-ping">NEW</span> 車椅子部分と駆動部分が着脱できる分体階段昇降機</p>
+                  <p class="ap-card__warn">＊開発中商品</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">MC-3A＆MC-3B：748,000円<small>（税抜価格 680,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=554.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/らくちん移動機1800x1200.jpg" alt="らくちん移動機"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">らくちん移動機(電動式) <span>[BK-063 A／B ＊開発中商品]</span></h4>
+                  <p class="ap-card__desc">電動式で高さが自由に調整が可能！前・後ろどちらからも乗り降りが可能で様々な環境に合わせて移動をサポート！</p>
+                  <p class="ap-card__warn">＊開発中商品</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">385,000円<small>（税抜価格 350,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="ap-sub__ttl">付属品</h4>
+            <div class="ap-grid ap-grid--sm">
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=127.html">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_crawler_belt01.jpg" alt="クローラーベルト"></div>
+                <h4 class="ap-card__name">クローラーベルト(２本セット)</h4>
+                <p class="ap-card__small">※輸送費、商品の大幅な価格高騰となっています。都度お手数をお掛けしますが、詳細はお問い合わせください。</p>
+                <p class="ap-card__price">52,800円<span class="tax">（税抜価格 48,000円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=129.html">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_battery01.jpg" alt="専用バッテリー"></div>
+                <h4 class="ap-card__name">専用バッテリー</h4>
+                <p class="ap-card__small">※輸送費、商品の大幅な価格高騰となっています。都度お手数をお掛けしますが、詳細はお問い合わせください。</p>
+                <p class="ap-card__price">58,300円<span class="tax">（税抜価格 53,000円）</span></p>
+              </a>
+            </div>
+          </div>
+
+          <!-- ===== 救急搬送・福祉器具 ===== -->
+          <div class="ap-group">
+            <h3 class="ap-group__ttl"><span class="font-en">WELFARE</span>救急搬送・福祉器具</h3>
+
+            <div class="ap-grid ap-grid--detail">
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=131.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_c_top01.jpg" alt="搬送用昇降ストレッチャーC"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">搬送用昇降ストレッチャーC</h4>
+                  <p class="ap-card__desc">病院・介護施設・介護タクシー業界に人気のストレッチャーです！従来のストレッチャーよりも有効スペースを確保しました。</p>
+                  <p class="ap-card__feature-ttl"><strong>【特徴】</strong></p>
+                  <ul class="ap-card__list">
+                    <li>背上げ部分のパイプが折り畳めて、約30cm短くなります</li>
+                    <li>背上げは自由な角度に調整が可能</li>
+                    <li>昇降の高さは自由に調整が可能</li>
+                    <li>安心・安全のストッパー付きキャスター</li>
+                  </ul>
+                  <p class="ap-card__links">
+                    <a href="cms/information/価格改定のお知らせ/" target="_blank" rel="noopener">＊価格改定について</a>
+                    <a href="cms/information/お客様に感謝を込めてキャンペーン」実施中！/" target="_blank" rel="noopener">＊キャンペーン対象商品</a>
+                  </p>
+                  <p class="ap-card__small">＊一般レンタル価格は令和5年9月20日より変更となります。</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">308,000円<small>（税抜価格 280,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ap-card ap-card--detail" data-href="index.html%3Fp=134.html" role="link" tabindex="0">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_e_stocon_top01.jpg" alt="両開き式電動ストレッチャー Eストコン"></div>
+                <div class="ap-card__body">
+                  <h4 class="ap-card__name">両開き式電動ストレッチャー Eストコン</h4>
+                  <p class="ap-card__desc">車内スペースが有効活用でき、ストレッチャー送迎がもっと楽になる！</p>
+                  <p class="ap-card__feature-ttl"><strong>【特徴】</strong></p>
+                  <ul class="ap-card__list">
+                    <li>ボタン1つで無段階昇降可能！</li>
+                    <li>背上げ5段階調整可能！</li>
+                    <li>折畳み式でコンパクト収納が可能！</li>
+                    <li>安心・安全のストッパー付きキャスター</li>
+                  </ul>
+                  <p class="ap-card__links">
+                    <a href="cms/information/価格改定のお知らせ/" target="_blank" rel="noopener">＊価格改定について</a>
+                    <a href="cms/information/お客様に感謝を込めてキャンペーン」実施中！/" target="_blank" rel="noopener">＊キャンペーン対象商品</a>
+                  </p>
+                  <p class="ap-card__small">＊一般レンタル価格は令和5年9月20日より変更となります。</p>
+                  <div class="ap-card__prices">
+                    <div class="ap-card__price-row"><span class="cat">購入</span><span class="val">330,000円<small>（税抜価格 300,000円）</small></span></div>
+                    <div class="ap-card__price-row"><span class="cat rent">レンタル</span><span class="val small">価格はお問い合わせください。</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ap-grid ap-grid--sm">
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=136.html">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_or01.jpg" alt=""></div>
+                <h4 class="ap-card__name">フォルディングストレッチャー（オレンジ）</h4>
+                <p class="ap-card__price">23,100円<span class="tax">（税抜価格 21,000円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=138.html">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_gr01.jpg" alt=""></div>
+                <h4 class="ap-card__name">フォルディングストレッチャー（グリーン / オレンジ）</h4>
+                <p class="ap-card__price">38,500円<span class="tax">（税抜価格 35,000円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=140.html">
+                <div class="ap-card__img"><img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_scoop_stretcher01-1.jpg" alt=""></div>
+                <h4 class="ap-card__name">スクープストレッチャー</h4>
+                <p class="ap-card__price">要問い合わせ</p>
+              </a>
+            </div>
+
+            <h4 class="ap-sub__ttl">付属品</h4>
+            <div class="ap-grid ap-grid--sm">
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=146.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_fastener01-1.jpg" alt=""></div>
+                <h4 class="ap-card__name">ハイエース専用ファスナー</h4>
+                <p class="ap-card__price">77,000円<span class="tax">（税抜価格 70,000円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=152.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_safety_belt01.jpg" alt=""></div>
+                <h4 class="ap-card__name">安全ベルト</h4>
+                <p class="ap-card__price">3,850円<span class="tax">（税抜価格 3,500円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=154.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_caster01.jpg" alt=""></div>
+                <h4 class="ap-card__name">キャスター</h4>
+                <p class="ap-card__price">要問い合わせ</p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=156.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_bag_rack01_262020.jpg" alt=""></div>
+                <h4 class="ap-card__name">パックラック</h4>
+                <p class="ap-card__price">27,500円<span class="tax">（税抜価格 25,000円）</span></p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=158.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_Intravenous_drip01.jpg" alt=""></div>
+                <h4 class="ap-card__name">どこでも点滴棒・架台</h4>
+                <p class="ap-card__price">
+                  セット：16,500円<span class="tax">（税抜価格 15,000円）</span><br>
+                  点滴棒：4,400円<span class="tax">（税抜価格 4,000円）</span><br>
+                  架台：13,200円<span class="tax">（税抜価格 12,000円）</span>
+                </p>
+              </a>
+              <a class="ap-card ap-card--sm" href="index.html%3Fp=160.html">
+                <div class="ap-card__img"><img src="cms/wp-content/uploads/pic_cylinder01_soldout3.jpg" alt=""></div>
+                <h4 class="ap-card__name">酸素ボンベ架台</h4>
+                <p class="ap-card__price">要問い合わせ（在庫なし）</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="btn btn-blk txt-ctr">
+            <a href="products.html">もっと見る</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============ CTA（注文書ダウンロード・お問い合わせ）— ③ 流用、緑基調 + T-ESTATE 風スクロール暗転 ============ -->
+      <div class="p-cta-block common_cta" id="cta_block">
+        <!-- 上端の薄い白フェード -->
+        <div class="common_cta--bg" aria-hidden="true"></div>
+        <!-- スクロールで暗くなるオーバーレイ -->
+        <div class="common_cta__overlay" aria-hidden="true"></div>
+        <div class="container common_cta--inner">
+          <div class="rs-cta">
+
+            <!-- 上段カード: 注文情報 -->
+            <div class="rs-cta__order">
+              <div class="rs-cta__order-main">
+                <div class="rs-cta__order-head">
+                  <span class="rs-cta__order-badge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V2.5A.5.5 0 0 1 9.5 2h5a.5.5 0 0 1 .5.5V4"/><path d="M9 12.5l2 2 4-4"/></svg>
+                  </span>
+                  <h2 class="rs-cta__order-title">ご注文はFAX・メールにて<br>承っております。</h2>
+                </div>
+                <p class="rs-cta__order-desc">注文書をダウンロードして商品をご記入のうえ<br>FAXまたはメールでお送りください。</p>
+
+                <ul class="rs-cta__pills">
+                  <li>
+                    <a href="cms/wp-content/uploads/fax_order1_251125.pdf" target="_blank" rel="noopener">
+                      <span class="rs-cta__pill-icon -pdf" aria-hidden="true">
+                        <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/icon-pdf.png" alt="">
+                      </span>
+                      <span class="rs-cta__pill-label">注文書ダウンロード（販売）</span>
+                      <span class="rs-cta__pill-arrow">›</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cms/wp-content/uploads/fax_order2_251125-1.pdf" target="_blank" rel="noopener">
+                      <span class="rs-cta__pill-icon -pdf" aria-hidden="true">
+                        <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/icon-pdf.png" alt="">
+                      </span>
+                      <span class="rs-cta__pill-label">注文書ダウンロード（レンタル）</span>
+                      <span class="rs-cta__pill-arrow">›</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cms/wp-content/uploads/catalog_260507.pdf" target="_blank" rel="noopener">
+                      <span class="rs-cta__pill-icon -pdf" aria-hidden="true">
+                        <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/icon-pdf.png" alt="">
+                      </span>
+                      <span class="rs-cta__pill-label">最新カタログダウンロード</span>
+                      <span class="rs-cta__pill-arrow">›</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="rs-cta__info">
+                  <div class="rs-cta__info-item">
+                    <span class="rs-cta__info-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="13" height="11" rx="1.5"/><path d="M9 9V4h7v5"/><rect x="9" y="13" width="7" height="4"/><circle cx="20.5" cy="11.5" r=".7" fill="currentColor"/></svg>
+                    </span>
+                    <div class="rs-cta__info-body">
+                      <small>FAX番号</small>
+                      <strong>073-494-6682</strong>
+                    </div>
+                  </div>
+                  <div class="rs-cta__info-item">
+                    <span class="rs-cta__info-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="13" rx="1.5"/><polyline points="3 7 12 13 21 7"/></svg>
+                    </span>
+                    <div class="rs-cta__info-body">
+                      <small>メールアドレス</small>
+                      <strong>careheart@syogenkigyo.co.jp</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.rs-cta__order -->
+
+            <!-- 下段カード: お問い合わせ -->
+            <div class="rs-cta__contact">
+              <div class="rs-cta__contact-head">
+                <h3 class="rs-cta__contact-title">お問い合わせ</h3>
+                <p class="rs-cta__contact-desc">資料請求やお見積りなど<br>お気軽にご相談ください。</p>
+              </div>
+              <div class="rs-cta__contact-col">
+                <p class="rs-cta__contact-sub">お電話でのお問い合わせ</p>
+                <a href="tel:073-494-6681" class="rs-cta__tel-link">
+                  <span class="rs-cta__tel-icon" aria-hidden="true">
+                    <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/ico_tel02.png" alt="">
+                  </span>
+                  <span class="rs-cta__tel-number">073-494-6681</span>
+                </a>
+                <p class="rs-cta__contact-hours">受付時間／平日9:00〜17:00</p>
+              </div>
+              <div class="rs-cta__contact-col">
+                <p class="rs-cta__contact-sub">メールでのお問い合わせ</p>
+                <a href="cms/contact/index.html" class="rs-cta__form-btn">
+                  <span class="rs-cta__form-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+                  </span>
+                  <span>お問い合わせフォーム</span>
+                </a>
+              </div>
+            </div><!-- /.rs-cta__contact -->
+
+          </div><!-- /.rs-cta -->
+        </div><!-- /.container -->
+      </div><!-- /.p-cta-block -->
+
+
+      <!-- ============ COMPANY INFO ============ -->
+      <section class="section_pdg home_company pos_rel" id="home_company" style="padding-bottom:16px;">
+        <div class="right_inner">
+          <h2 class="section_ttl mgn-btm48 r-up"><span class="font-en">COMPANY INFO</span><br class="pc-none">／企業概要・基本理念</h2>
+          <p class="company--txt mgn-btm56">階段介護の負担を、限りなくゼロへ。松原企業株式会社 福祉介護事業部「SSKケアハート」は、可搬型階段昇降機「らく段」シリーズ、搬送用ストレッチャーをはじめとする福祉介護機器の製造販売・レンタルを通じて、介護に関わるすべての方に安心と笑顔をお届けします。</p>
+          <div class="flex flex-c-wrap flex-j-between flex-sp-block mgn-btm40" style="margin-top:56px;">
+            <section class="company_link r-up">
+              <a href="index.html%3Fp=9.html">
+                <span class="company_link--icon">
+                  <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/ico_welfare01.png" alt="" width="120" height="120">
+                </span>
+                <h3 class="fz-20"><span class="font-en fz-40">COMPANY</span><span>会社概要</span></h3>
+                <span class="company_link--arrow">→</span>
+              </a>
+            </section>
+            <section class="company_link r-up">
+              <a href="index.html%3Fp=13.html">
+                <span class="company_link--icon">
+                  <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/ico_voice01.png" alt="" width="120" height="120">
+                </span>
+                <h3 class="fz-20"><span class="font-en fz-40">CSR</span><span>地域・社会貢献活動</span></h3>
+                <span class="company_link--arrow">→</span>
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 商品画像 流れる帯（旧OFFICESから移植） ============ -->
+      <section class="section_pdg bg-lgrn" id="home_strip" style="padding:8px 0 24px;">
+        <div class="scroll-strip">
+          <div class="scroll-strip__track">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_rakudan_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_newbogey_top01_260220.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/らく段セパレートtop.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_c_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_e_stocon_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_or01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/らくちん移動機1800x1200.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_rakudan_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_newbogey_top01_260220.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/らく段セパレートtop.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_c_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_e_stocon_top01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/pic_stretcher_or01.jpg" alt="">
+            <img src="https://syogen-careheart.com/cms/wp-content/uploads/らくちん移動機1800x1200.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+    </div><!-- .right_content -->
+  </div><!-- .content-wrap -->
+
+</main>
+
+<!-- floating side CTA -->
+<aside class="side-cta" aria-label="お問い合わせ">
+  <a href="tel:073-494-6681" class="tel">073-494-6681</a>
+  <a href="cms/contact/index.html" class="mail" target="_blank">メール</a>
+  <a href="cms/wp-content/uploads/catalog_260507.pdf" class="cat" target="_blank">カタログ</a>
+</aside>
+
+<!-- page top -->
+<a href="#top" class="page-top" id="js-page-top" aria-label="ページトップへ">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+</a>
+
+<footer class="footer">
+  <div class="footer-inner flex flex-j-between flex-c-wrap flex-sp-block">
+
+    <div class="footer--main mgn-btm56">
+      <div class="footer--logo mgn-btm32">
+        <a href="index.html">
+          <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/logo01_footer.png" alt="松原企業株式会社 福祉介護事業部ケアハート ロゴ" width="260">
+        </a>
+      </div>
+      <p class="footer--name-text">松原企業株式会社</p>
+      <address class="footer--office">
+        【和歌山営業所　福祉事業部】<br>
+        〒640-0341<br>
+        　和歌山県和歌山市相坂534-10<br>
+        Tel.073-494-6681　Fax.073-494-6682<br>
+        <br>
+        【本社】<br>
+        〒706-0012<br>
+        　岡山県玉野市玉4-12-12<br>
+        <br>
+        【東京営業所】<br>
+        〒151-0073<br>
+        　東京都渋谷区笹塚1丁目61-8<br>
+        　シャトレーイン東京・笹塚917
+      </address>
+    </div>
+
+    <div class="footer--right">
+      <nav class="footer--nav mgn-btm48">
+        <ul class="flex flex-j-between flex-sp-block">
+          <li><a href="products.html"><span>商品紹介</span></a></li>
+          <li><a href="voice.html"><span>お客様の声</span></a></li>
+          <li><a href="faq.html"><span>よくある質問</span></a></li>
+          <li><a href="information.html"><span>新着情報</span></a></li>
+          <li><a href="index.html%3Fp=9.html"><span>会社案内</span></a></li>
+          <li><a href="cms/wp-content/uploads/catalog_260507.pdf" target="_blank"><span>最新カタログ</span></a></li>
+          <li><a href="cms/contact/index.html"><span>お問い合わせ</span></a></li>
+        </ul>
+        <ul class="flex flex-j-between flex-sp-block">
+          <li><a href="index.html%3Fp=13.html"><span>地域・社会貢献活動</span></a></li>
+          <li><a href="index.html%3Fp=3.html"><span>プライバシーポリシー</span></a></li>
+          <li><a href="index.html%3Fp=16.html"><span>サイトマップ</span></a></li>
+          <li><a href="index.html%3Fp=584.html"><span>特定商取引法に関する表記</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="footer--cooy flex flex-j-end flex-a-ctr flex-sp-block mgn-btm24">
+        <p class="footer--copyright font-en fz-12">©2025 松原企業株式会社</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer--illust">
+    <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/illust_chair_stair.png" alt="可搬型階段昇降機らく段">
+    <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/illust_cargo_stair.png" alt="荷物用らく段 NEWボギー">
+    <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/illust_separate.png" alt="らく段セパレート">
+    <img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/illust_stretcher_c.png" alt="搬送用昇降ストレッチャーC">
+  </div>
+</footer>
+
+
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/jquery.waypoints.min.js"></script>
+<!-- ゲルコム由来 Slick (PICK UP センターモード用) -->
+<script src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/slick.min.js"></script>
+<script src="./assets/slick.min.js"></script>
+
+<script>
+$(function() {
+  /* ヒーロー演出を即発火 */
+  document.querySelector('.hero') && document.querySelector('.hero').classList.add('is-in');
+
+  /* IntersectionObserverで r-up を発火 */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.01 });
+    document.querySelectorAll('.r-up, .section_ttl').forEach(function(el){ io.observe(el); });
+  } else {
+    $('.r-up, .section_ttl').addClass('is-in');
+  }
+
+  /* 念のため: 3秒経過しても非表示のままの r-up があれば強制表示 */
+  setTimeout(function(){
+    document.querySelectorAll('.r-up').forEach(function(el){
+      if (!el.classList.contains('is-in')) el.classList.add('is-in');
+    });
+  }, 3000);
+
+  /* ヘッダー縮小 */
+  var $header = $('.header');
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    $header.toggleClass('is-shrink', y > 60);
+    $('#js-page-top').toggleClass('show', y > 400);
+  }
+  $(window).on('scroll', onScroll); onScroll();
+
+
+  /* （ヒーローバナーカルーセルは jQuery 外で初期化） */
+
+  /* （PICK UPカルーセルは jQuery 外で初期化） */
+
+  /* Sagisaka 由来の waypoint クラスは強制可視化（残骸対策） */
+  $('.hero-animation, [class*="waypoint"]').addClass('active');
+
+  /* gnav_btn 開閉 */
+  $('.gnav_btn').on('click', function() {
+    $(this).closest('header').toggleClass('active');
+  });
+
+  /* スムーススクロール */
+  $('a[href^="#"]').on('click', function() {
+    var href = $(this).attr('href');
+    if (href === '#' || href === '') return false;
+    var target = $(href);
+    if (target.length === 0) return true;
+    $('body,html').animate({ scrollTop: target.offset().top - 80 }, 400);
+    return false;
+  });
+});
+</script>
+
+<!-- カルーセル共通スクリプト（jQuery 非依存） -->
+<script>
+(function(){
+  /* opts: { trackId, itemSelector, wrapSelector, prevSelector, nextSelector, interval } */
+  function buildCarousel(opts){
+    var track = document.getElementById(opts.trackId);
+    if (!track) return;
+    var items = track.querySelectorAll(opts.itemSelector);
+    if (!items.length) return;
+
+    // 基本スタイルを JS から強制セット（CSS 衝突対策の保険）
+    track.style.overflow = 'visible';
+    track.style.display = 'flex';
+    track.style.transform = 'translateX(0)';
+    track.style.transition = 'transform .7s cubic-bezier(.55,.05,.22,.99)';
+    track.style.cursor = 'grab';
+    track.style.userSelect = 'none';
+    track.style.touchAction = 'pan-y';
+
+    /* 1スライドあたりの移動量(%) — 各アイテムの実幅から算出 */
+    function step(){
+      if (!items.length) return 100;
+      var w = items[0].getBoundingClientRect().width;
+      var trackW = track.getBoundingClientRect().width;
+      if (!trackW) return 100;
+      return (w / trackW) * 100;
+    }
+
+    var idx = 0;
+    function pad2(n){ return ('00' + n).slice(-2); }
+    function perView(){
+      var trackW = track.getBoundingClientRect().width;
+      var w = items[0].getBoundingClientRect().width;
+      if (!w) return 1;
+      return Math.max(1, Math.round(trackW / w));
+    }
+    function maxIdx(){ return Math.max(0, items.length - perView()); }
+    function go(i){
+      var max = maxIdx();
+      // i > max → 先頭へループ／i < 0 → 末尾へループ
+      if (i > max)      idx = 0;
+      else if (i < 0)   idx = max;
+      else              idx = i;
+      track.style.transition = 'transform .7s cubic-bezier(.55,.05,.22,.99)';
+      track.style.transform = 'translateX(' + (-idx * step()) + '%)';
+      if (opts.numId) {
+        var el = document.getElementById(opts.numId);
+        if (el) el.textContent = pad2(idx + 1);
+      }
+      if (opts.numIdLeft) {
+        var elL = document.getElementById(opts.numIdLeft);
+        if (elL) elL.textContent = pad2(idx + 1);
+      }
+      if (opts.numIdRight) {
+        var elR = document.getElementById(opts.numIdRight);
+        // 右側カードの番号（perView=2 のとき、左の次。perView=1 なら左と同じ）
+        if (elR) {
+          var pv = perView();
+          elR.textContent = pad2(idx + (pv > 1 ? 2 : 1));
+        }
+      }
+    }
+    var prev = opts.prevSelector ? document.querySelector(opts.prevSelector) : null;
+    var next = opts.nextSelector ? document.querySelector(opts.nextSelector) : null;
+    if (prev) prev.addEventListener('click', function(){ go(idx - 1); resetTimer(); });
+    if (next) next.addEventListener('click', function(){ go(idx + 1); resetTimer(); });
+
+    var timer = null;
+    function start(){ stop(); timer = setInterval(function(){ go(idx + 1); }, opts.interval || 2000); }
+    function stop(){ if (timer){ clearInterval(timer); timer = null; } }
+    function resetTimer(){ stop(); start(); }
+
+    var wrap = opts.wrapSelector ? track.closest(opts.wrapSelector) : track.parentNode;
+    if (wrap){
+      wrap.addEventListener('mouseenter', stop);
+      wrap.addEventListener('mouseleave', start);
+    }
+    document.addEventListener('visibilitychange', function(){
+      if (document.hidden) stop(); else start();
+    });
+
+    /* スワイプ／ドラッグ */
+    var isDown = false, startX = 0, movedX = 0, startTime = 0;
+    function getX(e){
+      if (e.touches && e.touches.length) return e.touches[0].clientX;
+      if (e.changedTouches && e.changedTouches.length) return e.changedTouches[0].clientX;
+      return e.clientX;
+    }
+    function down(e){
+      isDown = true; startX = getX(e); movedX = 0; startTime = Date.now();
+      track.style.transition = 'none'; track.style.cursor = 'grabbing'; stop();
+    }
+    function move(e){
+      if (!isDown) return;
+      movedX = getX(e) - startX;
+      var trackW = track.getBoundingClientRect().width || 1;
+      track.style.transform = 'translateX(' + (-idx * step() + (movedX / trackW) * 100) + '%)';
+    }
+    function up(){
+      if (!isDown) return;
+      isDown = false; track.style.cursor = 'grab';
+      var itemW = items[0] ? items[0].getBoundingClientRect().width : 1;
+      var threshold = itemW * 0.3;   // 1アイテム幅の30%で次/前へ
+      var velocity = Math.abs(movedX) / Math.max(1, Date.now() - startTime);
+      if (movedX < -threshold || (movedX < -20 && velocity > 0.5))      go(idx + 1);
+      else if (movedX >  threshold || (movedX >  20 && velocity > 0.5)) go(idx - 1);
+      else                                                              go(idx);
+      resetTimer();
+    }
+    track.addEventListener('touchstart', down, {passive:true});
+    track.addEventListener('touchmove',  move, {passive:true});
+    track.addEventListener('touchend',   up);
+    track.addEventListener('touchcancel',up);
+    track.addEventListener('mousedown', function(e){ e.preventDefault(); down(e); });
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup',   up);
+    track.addEventListener('click', function(e){
+      if (Math.abs(movedX) > 5 && Date.now() - startTime < 500) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+    track.querySelectorAll('img').forEach(function(img){
+      img.addEventListener('dragstart', function(e){ e.preventDefault(); });
+      img.draggable = false;
+    });
+
+    go(0); start();
+    console.log('[carousel #' + opts.trackId + '] initialized — items:', items.length);
+  }
+
+  /* data-href を持つ要素を擬似リンク化（内部の <a> はそのまま動作） */
+  function initDataHref(){
+    document.querySelectorAll('[data-href]').forEach(function(el){
+      el.addEventListener('click', function(e){
+        if (e.target.closest('a')) return;   // 内部リンクは尊重
+        window.location.href = el.getAttribute('data-href');
+      });
+      el.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          window.location.href = el.getAttribute('data-href');
+        }
+      });
+    });
+  }
+
+  function initAll(){
+    initDataHref();
+    /* ヒーロー背景クロスフェード（2枚） */
+    (function(){
+      var bgs = document.querySelectorAll('.hero .hero__bg');
+      if (bgs.length < 2) return;
+      var idx = 0;
+      setInterval(function(){
+        bgs[idx].classList.remove('is-active');
+        idx = (idx + 1) % bgs.length;
+        bgs[idx].classList.add('is-active');
+      }, 4500);
+    })();
+
+    /* PICK UP — ゲルコム由来 Slick (.hero_slider) を初期化 + ぐるぐる番号を連動 */
+    if (window.jQuery && jQuery('.home_pickup--slick .hero_slider').length) {
+      jQuery(function($){
+        var $slider = $('.home_pickup--slick .hero_slider');
+        function pad2(n){ return ('0' + n).slice(-2); }
+        function updateDecoNums(idx, total){
+          var current = (idx % total) + 1;
+          $('#pickup_deco_num_l').text(pad2(current));
+        }
+        $slider.on('init reInit afterChange', function(event, slick, currentSlide){
+          var idx = (typeof currentSlide === 'number') ? currentSlide : 0;
+          updateDecoNums(idx, slick.slideCount);
+        });
+        $slider.slick({
+          centerMode: true,
+          slidesToShow: 1,
+          variableWidth: true,
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          speed: 700,
+          prevArrow: '<img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/hero_slide_left.png" class="slide-arrow prev-arrow" alt="前へ">',
+          nextArrow: '<img src="cms/wp-content/themes/marutomirenta_theme/tmpl-img/hero_slide_right.png" class="slide-arrow next-arrow" alt="次へ">',
+          responsive: [{ breakpoint: 768, settings: { arrows: false } }]
+        });
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+})();
+</script>
+
+</body></html>
